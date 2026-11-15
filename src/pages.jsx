@@ -65,7 +65,7 @@ function StatusBanner() {
       <div className="flex items-center gap-2">
         <AlertCircle size={18} className="text-rose-600 shrink-0" />
         <span>
-          <strong>Backend Offline:</strong> {error || 'Could not connect to SaarthiFlow backend.'} Ensure the server is running on port 3001.
+          <strong>Backend Offline:</strong> {error || 'Could not connect to SaarthiFlow backend.'}
         </span>
       </div>
       <button

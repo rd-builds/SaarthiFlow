@@ -8,22 +8,62 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 // CORS configuration
+// CLIENT_URL: set this on Render to your exact Vercel production URL,
+// e.g. https://saarthiflow.vercel.app
+// EXTRA_ORIGINS: comma-separated list of trusted additional origins,
+// e.g. preview URLs like https://saarthiflow-git-main-yourteam.vercel.app
 const allowedOrigins = [
   'http://localhost:5173',
   'http://127.0.0.1:5173',
   'http://localhost:3000',
   'http://localhost:4173',
-  process.env.CLIENT_URL
+  ...(process.env.CLIENT_URL ? [process.env.CLIENT_URL.trim()] : []),
+  ...(process.env.EXTRA_ORIGINS
+    ? process.env.EXTRA_ORIGINS.split(',').map(o => o.trim()).filter(Boolean)
+    : [])
 ].filter(Boolean);
+
+// Vercel project slug: set on Render as VERCEL_PROJECT_NAME (e.g. "saarthiflow")
+// Only preview deployments whose hostname ends with
+// `-<VERCEL_PROJECT_NAME>.vercel.app` or matches the project slug will be allowed.
+const vercelProjectName = process.env.VERCEL_PROJECT_NAME
+  ? process.env.VERCEL_PROJECT_NAME.trim().toLowerCase()
+  : null;
+
+function isTrustedVercelOrigin(origin) {
+  if (!vercelProjectName) return false;
+  try {
+    const { hostname } = new URL(origin);
+    if (!hostname.endsWith('.vercel.app')) return false;
+    // Allow: <project>.vercel.app  (production alias)
+    if (hostname === `${vercelProjectName}.vercel.app`) return true;
+    // Allow: <project>-<hash/branch>-<team>.vercel.app  (preview deployments)
+    // The hostname must contain the project name as a segment component.
+    const parts = hostname.replace('.vercel.app', '').split('-');
+    // Vercel preview hostnames: <project-slug>-<gitbranch or hash>-<team>.vercel.app
+    // We require the slug to appear at the start.
+    return hostname.startsWith(`${vercelProjectName}-`);
+  } catch {
+    return false;
+  }
+}
 
 app.use(cors({
   origin: (origin, callback) => {
     // Allow requests with no origin (e.g. mobile apps, curl, server-to-server)
-    if (!origin || allowedOrigins.includes(origin) || origin.startsWith('http://localhost:') || origin.startsWith('http://127.0.0.1:')) {
-      callback(null, true);
-    } else {
-      callback(new Error(`Origin ${origin} not allowed by CORS`));
+    if (!origin) {
+      return callback(null, true);
     }
+    if (
+      allowedOrigins.includes(origin) ||
+      origin.startsWith('http://localhost:') ||
+      origin.startsWith('http://127.0.0.1:') ||
+      isTrustedVercelOrigin(origin)
+    ) {
+      return callback(null, true);
+    }
+    console.warn(`[CORS] Blocked origin: ${origin}`);
+    return callback(new Error(`Origin ${origin} not allowed by CORS`));
   },
   credentials: true
 }));

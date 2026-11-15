@@ -251,6 +251,100 @@
   ],
   "proposals": [
     {
+      "id": "prop-mwhwf05c-yjlej",
+      "title": "Create a checklist for submission",
+      "source": "Agent Studio",
+      "status": "pending",
+      "tasks": [
+        {
+          "id": "p-task-mwhwf053-5cnw",
+          "title": "Finalize README, architecture diagram and screenshots",
+          "priority": "Medium",
+          "due": "2026-11-18",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        },
+        {
+          "id": "p-task-mwhwf053-5hq6",
+          "title": "Record and edit 2-minute demo walkthrough video",
+          "priority": "High",
+          "due": "2026-11-19",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        },
+        {
+          "id": "p-task-mwhwf053-igoq",
+          "title": "Test all public API endpoints and database integrity",
+          "priority": "High",
+          "due": "2026-11-20",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        },
+        {
+          "id": "p-task-mwhwf053-4p75",
+          "title": "Submit repository link and deck on portal",
+          "priority": "High",
+          "due": "2026-11-20",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        }
+      ],
+      "created_at": "2026-11-15T13:56:57.600Z",
+      "decided_at": null,
+      "execution_result": null
+    },
+    {
+      "id": "prop-mwhwep3k-zwa5r",
+      "title": "Create a checklist for submission",
+      "source": "Agent Studio",
+      "status": "pending",
+      "tasks": [
+        {
+          "id": "p-task-mwhwep33-4up6",
+          "title": "Finalize README, architecture diagram and screenshots",
+          "priority": "Medium",
+          "due": "2026-11-18",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        },
+        {
+          "id": "p-task-mwhwep33-acwd",
+          "title": "Record and edit 2-minute demo walkthrough video",
+          "priority": "High",
+          "due": "2026-11-19",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        },
+        {
+          "id": "p-task-mwhwep33-y9ef",
+          "title": "Test all public API endpoints and database integrity",
+          "priority": "High",
+          "due": "2026-11-20",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        },
+        {
+          "id": "p-task-mwhwep33-gikj",
+          "title": "Submit repository link and deck on portal",
+          "priority": "High",
+          "due": "2026-11-20",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        }
+      ],
+      "created_at": "2026-11-15T13:56:43.280Z",
+      "decided_at": null,
+      "execution_result": null
+    },
+    {
       "id": "prop-mwfgbnk9-83ajv",
       "title": "Reschedule overdue tasks",
       "source": "Agent Studio",
@@ -932,6 +1026,24 @@
   ],
   "agent_runs": [
     {
+      "id": "run-mwhwf053-g92ws",
+      "command": "Create a checklist for submission",
+      "status": "planned",
+      "raw_input": "Create a checklist for submission",
+      "output_summary": "Submission Readiness Checklist",
+      "proposal_id": null,
+      "created_at": "2026-11-15T13:56:57.591Z"
+    },
+    {
+      "id": "run-mwhwep34-g88hs",
+      "command": "Create a checklist for submission",
+      "status": "planned",
+      "raw_input": "Create a checklist for submission",
+      "output_summary": "Submission Readiness Checklist",
+      "proposal_id": null,
+      "created_at": "2026-11-15T13:56:43.264Z"
+    },
+    {
       "id": "run-mwfgbnk7-3qllz",
       "command": "Reschedule overdue tasks",
       "status": "planned",
@@ -1005,6 +1117,26 @@
     }
   ],
   "activity_logs": [
+    {
+      "id": "act-mwhwf05m-eiwk4",
+      "type": "Plan",
+      "title": "AI Plan drafted: Create a checklist for submission",
+      "detail": "4 proposed actions awaiting approval",
+      "source": "Agent Studio",
+      "status": "Pending",
+      "timestamp": "2026-11-15T13:56:57.610Z",
+      "at": 1794751017610
+    },
+    {
+      "id": "act-mwhwep3s-q4suu",
+      "type": "Plan",
+      "title": "AI Plan drafted: Create a checklist for submission",
+      "detail": "4 proposed actions awaiting approval",
+      "source": "Agent Studio",
+      "status": "Pending",
+      "timestamp": "2026-11-15T13:56:43.288Z",
+      "at": 1794751003288
+    },
     {
       "id": "act-mwfgbnl2-qtztc",
       "type": "Plan",
