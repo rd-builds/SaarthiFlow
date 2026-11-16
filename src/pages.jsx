@@ -1246,9 +1246,9 @@ export function Extension() {
       title="Get Extension"
       sub="Turn any webpage into an action plan."
       right={
-        <button className="btn !cursor-not-allowed opacity-70" disabled>
-          <Download size={16} />Coming Soon
-        </button>
+        <a href="/extension.zip" download="extension.zip" className="btn flex items-center gap-2">
+          <Download size={16} />Download
+        </a>
       }
     >
       <div className="grid gap-4 md:grid-cols-3">

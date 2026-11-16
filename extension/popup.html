@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SaarthiFlow</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="app-container">
+    
+    <!-- TOP APP HEADER -->
+    <header class="app-header">
+      <div class="brand-group">
+        <div class="logo-box">
+          <svg class="icon-zap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <div class="brand-title">SaarthiFlow</div>
+          <div class="brand-tagline">From Browsing to Doing</div>
+        </div>
+      </div>
+      
+      <div class="header-actions">
+        <!-- Recent Captures Toggle -->
+        <button id="btn-toggle-recents" class="icon-btn" aria-label="Recent Captures" title="Recent Captures">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 16 14"></polyline>
+          </svg>
+        </button>
+
+        <!-- Status Indicator Pill -->
+        <button id="btn-status-pill" class="status-pill status-live-ok" title="Click to view mode or test connection">
+          <span class="status-dot"></span>
+          <span id="txt-mode-label">Live (Render)</span>
+        </button>
+
+        <!-- Settings Toggle Button -->
+        <button id="btn-toggle-settings" class="icon-btn" aria-label="Open Settings" title="Settings">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path>
+            <circle cx="12" cy="12" r="3"></circle>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- NOTIFICATION & ALERT BANNER -->
+    <div id="banner-alert" class="alert-banner hidden">
+      <div class="alert-content">
+        <span id="alert-icon" class="alert-icon"></span>
+        <span id="alert-message" class="alert-text"></span>
+      </div>
+      <button id="btn-close-alert" class="alert-close" aria-label="Dismiss">&times;</button>
+    </div>
+
+    <!-- MAIN SCROLLABLE CONTENT VIEW -->
+    <main id="view-main" class="main-view">
+      
+      <!-- CURRENT ACTIVE TAB CARD -->
+      <section class="card tab-card">
+        <div class="tab-card-header">
+          <div class="tab-favicon-wrap">
+            <img id="tab-favicon" class="tab-favicon hidden" alt="favicon" />
+            <svg id="tab-favicon-fallback" class="tab-favicon-fallback" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+          </div>
+          <div class="tab-info">
+            <div class="tab-meta-row">
+              <span id="tab-domain" class="tab-domain">Detecting…</span>
+              <span id="badge-page-type" class="badge-type">Analyzing structure…</span>
+            </div>
+            <h1 id="tab-title" class="tab-title">Loading active webpage…</h1>
+          </div>
+        </div>
+        <div id="tab-url-bar" class="tab-url-bar" title="Current URL">
+          <span id="tab-url" class="tab-url">https://…</span>
+        </div>
+      </section>
+
+      <!-- GMAIL DETECTION BANNER -->
+      <div id="banner-gmail-detect" class="gmail-detect-banner hidden">
+        <div class="gmail-badge-icon">✉️</div>
+        <div class="gmail-badge-content">
+          <div class="gmail-badge-title">Gmail Detected</div>
+          <div class="gmail-badge-sub">Click <strong>Read Email</strong> below to extract tasks from the opened message.</div>
+        </div>
+      </div>
+
+      <!-- INITIAL ACTIONS HERO -->
+      <section id="panel-initial-actions" class="action-hero">
+        
+        <!-- Action Cards Grid: Read Email & Read Current Page -->
+        <div class="action-grid-buttons">
+          <button id="btn-read-email" class="btn btn-secondary btn-action-card" title="Read currently open Gmail message">
+            <div class="action-card-icon gmail-icon">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+            <div class="action-card-text">
+              <span class="action-card-title">Read Email</span>
+              <span class="action-card-sub">Extract sender, body, dates</span>
+            </div>
+          </button>
+
+          <button id="btn-read-page" class="btn btn-secondary btn-action-card" title="Extract visible content from current webpage">
+            <div class="action-card-icon">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+            </div>
+            <div class="action-card-text">
+              <span class="action-card-title">Read Current Page</span>
+              <span class="action-card-sub">Articles, hackathons, docs</span>
+            </div>
+          </button>
+        </div>
+
+        <!-- Primary Action: Analyze with AI -->
+        <button id="btn-analyze" class="btn btn-primary btn-hero">
+          <svg class="btn-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+          </svg>
+          <span id="txt-analyze-btn">Analyze with NVIDIA AI</span>
+        </button>
+
+        <!-- Secondary Action Row -->
+        <div class="action-secondary-row">
+          <button id="btn-quick-task" class="btn btn-secondary btn-sm flex-1">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+            <span>Create Task Manually</span>
+          </button>
+          <button id="btn-save-later" class="btn btn-secondary btn-sm flex-1" title="Save this URL as a task to review later">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+            </svg>
+            <span>Save for Later</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- LOADING & AGENT EXECUTION STATE -->
+      <section id="panel-loading" class="card loading-card hidden">
+        <div class="spinner-ring"></div>
+        <div class="loading-content">
+          <div id="loading-stage-title" class="loading-title">Understanding content…</div>
+          <div id="loading-stage-desc" class="loading-desc">Extracting requirements, dates, and action items</div>
+        </div>
+      </section>
+
+      <!-- RESULTS CONTAINER -->
+      <div id="panel-results" class="results-container hidden">
+
+        <!-- NON-ACTIONABLE PAGE NOTICE -->
+        <section id="card-non-actionable" class="card non-actionable-card hidden">
+          <div class="empty-icon-wrap">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="8" x2="12" y2="12"></line>
+              <line x1="12" y1="16" x2="12.01" y2="16"></line>
+            </svg>
+          </div>
+          <h3 class="non-actionable-title">No clear actionable opportunity detected</h3>
+          <p class="non-actionable-desc">
+            This page appears to be a general website or homepage. You can still ask the AI to find potential tasks or create one manually:
+          </p>
+          <div class="non-actionable-actions">
+            <button id="btn-na-quick-task" class="btn btn-primary btn-sm">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+              Create a Task Manually
+            </button>
+            <button id="btn-na-force-plan" class="btn btn-secondary btn-sm">
+              Ask AI to Find Actions Anyway
+            </button>
+          </div>
+        </section>
+
+        <!-- ACTIONABLE OPPORTUNITY SUMMARY CARD -->
+        <section id="card-opportunity" class="card opportunity-card">
+          <div class="opportunity-header">
+            <div class="opp-badge-row">
+              <span id="txt-opp-category-badge" class="badge-category">🏆 Hackathon</span>
+              <span id="txt-opp-organizer" class="badge-organizer">Host: Not specified</span>
+            </div>
+            <h2 id="txt-opp-title" class="opportunity-title">Opportunity Title</h2>
+          </div>
+
+          <!-- Key Metadata Grid -->
+          <div class="opp-metadata-grid">
+            <div class="meta-item">
+              <span class="meta-label">📅 Deadline / Date</span>
+              <span id="txt-opp-deadline" class="meta-value">Not specified</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">🎯 Audience / Context</span>
+              <span id="txt-opp-eligibility" class="meta-value">Not specified</span>
+            </div>
+          </div>
+
+          <!-- AI Generated Summary Box -->
+          <div id="box-ai-summary" class="ai-summary-box">
+            <div class="ai-summary-title">🤖 AI Summary & Key Takeaways</div>
+            <div id="txt-ai-summary" class="ai-summary-text">AI analysis summary will appear here.</div>
+          </div>
+
+          <!-- Requirements Checklist / Pills -->
+          <div class="opp-section">
+            <div class="opp-section-title">Key Requirements & Deliverables</div>
+            <div id="list-opp-requirements" class="requirements-pill-list">
+              <!-- Rendered dynamically -->
+            </div>
+          </div>
+
+          <!-- Recommended Next Steps -->
+          <div class="opp-section">
+            <div class="opp-section-title">Suggested Actions</div>
+            <ul id="list-opp-steps" class="steps-bullet-list">
+              <!-- Rendered dynamically -->
+            </ul>
+          </div>
+
+          <!-- Action Links -->
+          <div id="box-action-links" class="action-links-box hidden">
+            <span class="links-label">Important Links:</span>
+            <div id="list-action-links" class="links-row"></div>
+          </div>
+        </section>
+
+        <!-- PROPOSED TASKS SECTION -->
+        <section id="card-tasks" class="card tasks-card">
+          <div class="tasks-header">
+            <div class="section-title-row">
+              <span class="section-icon-badge">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="9 11 12 14 22 4"></polyline>
+                  <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                </svg>
+              </span>
+              <h3 class="section-heading">Proposed Tasks</h3>
+              <span id="txt-task-count" class="chip chip-count">0</span>
+            </div>
+            
+            <div class="tasks-batch-actions">
+              <button id="btn-select-all" class="text-btn">Select All</button>
+              <span class="divider-dot">•</span>
+              <button id="btn-deselect-all" class="text-btn">Deselect All</button>
+              <span class="divider-dot">•</span>
+              <button id="btn-add-task" class="text-btn text-btn-brand">+ Add Task</button>
+            </div>
+          </div>
+
+          <!-- Dynamic Tasks List -->
+          <div id="container-tasks-list" class="tasks-list">
+            <!-- Rendered by popup.js -->
+          </div>
+
+          <!-- SUBMISSION & APPROVAL ACTIONS -->
+          <div class="approval-actions">
+            <!-- Primary Human-in-the-Loop Approval Button -->
+            <button id="btn-approve-tasks" class="btn btn-primary btn-block btn-approve">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span id="txt-approve-btn-label">Approve & Create 0 Tasks</span>
+            </button>
+
+            <!-- Secondary: Send for Later Review -->
+            <button id="btn-send-approval" class="btn btn-secondary btn-block btn-sm" style="margin-top: 8px;">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+              <span id="txt-submit-btn-label">Send to Dashboard for Later Review</span>
+            </button>
+          </div>
+
+          <!-- APPROVAL SUCCESS CARD -->
+          <div id="panel-approval-success" class="card approval-success-card hidden">
+            <div class="success-icon-wrap">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <div class="success-content">
+              <h4 id="txt-success-title" class="success-title">Tasks Approved!</h4>
+              <p id="txt-success-desc" class="success-desc">Tasks created and saved to SaarthiFlow database.</p>
+              <div class="success-actions">
+                <button id="btn-view-space" class="btn btn-primary btn-sm flex-1">Open My Space →</button>
+                <button id="btn-view-approvals" class="btn btn-secondary btn-sm flex-1">Open Approvals</button>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+      </div>
+
+    </main>
+
+    <!-- QUICK TASK MODAL (OVERLAY) -->
+    <div id="modal-quick-task" class="modal-overlay hidden">
+      <div class="modal-card">
+        <div class="modal-header">
+          <h3 class="modal-title">Create Quick Task</h3>
+          <button id="btn-close-quick-modal" class="modal-close">&times;</button>
+        </div>
+        <div class="modal-body">
+          <label class="input-label" for="input-qt-title">Task Title</label>
+          <input id="input-qt-title" type="text" class="inp" placeholder="e.g. Review registration requirements" />
+
+          <div class="modal-row-2">
+            <div>
+              <label class="input-label" for="select-qt-priority">Priority</label>
+              <select id="select-qt-priority" class="inp">
+                <option value="High">High</option>
+                <option value="Medium" selected>Medium</option>
+                <option value="Low">Low</option>
+              </select>
+            </div>
+            <div>
+              <label class="input-label" for="input-qt-due">Due Date</label>
+              <input id="input-qt-due" type="date" class="inp" />
+            </div>
+          </div>
+
+          <label class="input-label" for="select-qt-project">Category / Project</label>
+          <select id="select-qt-project" class="inp">
+            <option value="Hackathon">Hackathon</option>
+            <option value="Internships">Internships</option>
+            <option value="Open Source">Open Source</option>
+            <option value="College">College</option>
+            <option value="Learning">Learning</option>
+            <option value="Email">Email</option>
+            <option value="General" selected>General</option>
+          </select>
+
+          <label class="input-label" for="input-qt-source">Source Reference</label>
+          <input id="input-qt-source" type="text" class="inp inp-disabled" readonly />
+        </div>
+        <div class="modal-footer">
+          <button id="btn-submit-quick-task" class="btn btn-primary btn-block">Add to My Space</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- RECENT CAPTURES DRAWER -->
+    <div id="view-recents" class="settings-view hidden">
+      <div class="settings-header">
+        <button id="btn-back-from-recents" class="icon-btn" aria-label="Back">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+        </button>
+        <h2 class="settings-title">Recent Captures</h2>
+      </div>
+      <div class="settings-content">
+        <p class="settings-hint">Recently analyzed opportunities and emails from your browsing sessions.</p>
+        <div id="list-recent-captures" class="recents-list">
+          <!-- Rendered dynamically -->
+        </div>
+      </div>
+    </div>
+
+    <!-- SETTINGS VIEW PANEL -->
+    <div id="view-settings" class="settings-view hidden">
+      <div class="settings-header">
+        <button id="btn-back-from-settings" class="icon-btn" aria-label="Back">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+        </button>
+        <h2 class="settings-title">Extension Settings</h2>
+      </div>
+
+      <div class="settings-content">
+        
+        <!-- OPERATING MODE SELECTOR -->
+        <div class="settings-group">
+          <label class="settings-label">Operating Mode</label>
+          <div class="mode-switch-container">
+            <button id="opt-mode-live" class="mode-pill-option active" data-mode="live">
+              <span class="mode-opt-title">Live Mode (Production)</span>
+              <span class="mode-opt-desc">SaarthiFlow AI Agent & Backend</span>
+            </button>
+            <button id="opt-mode-demo" class="mode-pill-option" data-mode="demo">
+              <span class="mode-opt-title">Demo Mode (Offline)</span>
+              <span class="mode-opt-desc">Deterministic local testing</span>
+            </button>
+          </div>
+          <p class="settings-hint">
+            <strong>Live Mode:</strong> Sends extracted content to the deployed SaarthiFlow backend & NVIDIA AI agent for task planning.<br>
+            <strong>Demo Mode:</strong> Offline testing without servers or network calls.
+          </p>
+        </div>
+
+        <!-- ENVIRONMENT PRESET BUTTONS -->
+        <div class="settings-group">
+          <label class="settings-label">Environment Presets</label>
+          <div class="preset-buttons-row">
+            <button id="btn-preset-production" class="btn btn-secondary btn-sm flex-1" type="button">
+              🌐 Render Backend
+            </button>
+            <button id="btn-preset-local" class="btn btn-secondary btn-sm flex-1" type="button">
+              💻 Localhost (3001)
+            </button>
+          </div>
+        </div>
+
+        <!-- BACKEND API CONFIGURATION -->
+        <div id="group-backend-urls" class="settings-group">
+          <label for="input-backend-url" class="settings-label">SaarthiFlow Backend URL</label>
+          <input id="input-backend-url" type="url" class="inp" placeholder="https://saarthiflow-t5lp.onrender.com/api" />
+          <p class="settings-hint">Deployed backend: <code>https://saarthiflow-t5lp.onrender.com/api</code></p>
+
+          <label for="input-dashboard-url" class="settings-label" style="margin-top: 10px;">Web Dashboard URL</label>
+          <input id="input-dashboard-url" type="url" class="inp" placeholder="https://saarthiflow.vercel.app" />
+          <p class="settings-hint">Deployed dashboard: <code>https://saarthiflow.vercel.app</code></p>
+
+          <!-- TEST CONNECTION BUTTON & STATUS -->
+          <div class="connection-test-row">
+            <button id="btn-test-connection" class="btn btn-secondary btn-sm">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="23 4 23 10 17 10"></polyline>
+                <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
+              </svg>
+              <span>Test Connection</span>
+            </button>
+            <span id="status-connection-badge" class="connection-status-pill">Ready</span>
+          </div>
+        </div>
+
+        <!-- DEMO STORAGE MANAGEMENT -->
+        <div class="settings-group">
+          <label class="settings-label">Demo Storage</label>
+          <div class="demo-storage-box">
+            <div class="storage-info">
+              <span id="txt-demo-proposals-count" class="storage-count">0 proposals</span>
+              <span class="storage-desc">saved locally in Chrome storage</span>
+            </div>
+            <button id="btn-clear-demo" class="btn btn-secondary btn-sm btn-danger-soft">Clear Demo Data</button>
+          </div>
+        </div>
+
+        <!-- SAVE SETTINGS -->
+        <div class="settings-footer">
+          <button id="btn-save-settings" class="btn btn-primary btn-block">Save Settings</button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- PERSISTENT FOOTER -->
+    <footer class="app-footer">
+      <div class="footer-links">
+        <a id="link-dashboard" href="#" class="footer-link">Dashboard</a>
+        <span class="footer-divider">|</span>
+        <a id="link-approvals" href="#" class="footer-link">Approvals</a>
+        <span class="footer-divider">|</span>
+        <a id="link-space" href="#" class="footer-link">My Space</a>
+      </div>
+      <div class="footer-brand-note">Agents That Get Work Done</div>
+    </footer>
+
+  </div>
+
+  <!-- Extension Scripts -->
+  <script src="config.js"></script>
+  <script src="api.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

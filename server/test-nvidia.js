@@ -42,7 +42,7 @@ async function runTests() {
     { origin: 'https://saarthi-flow-two.vercel.app', expected: true, desc: 'Production deployed frontend' },
     { origin: 'https://saarthi-flow-two.vercel.app/', expected: true, desc: 'Production deployed frontend with trailing slash' },
     { origin: 'https://saarthi-flow-two-git-main-myteam.vercel.app', expected: true, desc: 'Vercel preview branch deployment' },
-    { origin: 'https://saarthiflow.vercel.app', expected: true, desc: 'Legacy production domain' },
+    { origin: 'https://saarthi-flow-two.vercel.app/', expected: true, desc: 'Legacy production domain' },
     { origin: 'http://localhost:5173', expected: true, desc: 'Local Vite dev server' },
     { origin: 'http://localhost:3000', expected: true, desc: 'Local React dev server' },
     { origin: 'http://127.0.0.1:5173', expected: true, desc: 'Local IP loopback' },

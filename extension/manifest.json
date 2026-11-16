@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "SaarthiFlow — From Browsing to Doing",
+  "version": "1.1.0",
+  "description": "Agentic AI productivity companion that converts webpage and Gmail email content into actionable task proposals with human-in-the-loop approval.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "SaarthiFlow — Read & Plan Actions",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://saarthiflow-t5lp.onrender.com/*",
+    "https://mail.google.com/*",
+    "http://localhost/*",
+    "http://127.0.0.1/*",
+    "https://*/*",
+    "http://*/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
