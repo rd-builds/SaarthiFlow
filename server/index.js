@@ -8,65 +8,96 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 // CORS configuration
-// CLIENT_URL: set this on Render to your exact Vercel production URL,
-// e.g. https://saarthiflow.vercel.app
-// EXTRA_ORIGINS: comma-separated list of trusted additional origins,
-// e.g. preview URLs like https://saarthiflow-git-main-yourteam.vercel.app
+// Production deployed frontend URLs
+const defaultProductionOrigins = [
+  'https://saarthi-flow-two.vercel.app',
+  'https://saarthiflow.vercel.app'
+];
+
+// Helper to sanitize URLs (remove trailing slashes, trim)
+const sanitizeOrigin = (url) => (url ? url.trim().replace(/\/+$/, '') : '');
+
+// Parse origins from CLIENT_URL (single or comma-separated) and EXTRA_ORIGINS
+const envClientOrigins = (process.env.CLIENT_URL ? process.env.CLIENT_URL.split(',') : [])
+  .map(sanitizeOrigin)
+  .filter(Boolean);
+
+const envExtraOrigins = (process.env.EXTRA_ORIGINS ? process.env.EXTRA_ORIGINS.split(',') : [])
+  .map(sanitizeOrigin)
+  .filter(Boolean);
+
 const allowedOrigins = [
+  ...defaultProductionOrigins,
   'http://localhost:5173',
   'http://127.0.0.1:5173',
   'http://localhost:3000',
+  'http://127.0.0.1:3000',
   'http://localhost:4173',
-  ...(process.env.CLIENT_URL ? [process.env.CLIENT_URL.trim()] : []),
-  ...(process.env.EXTRA_ORIGINS
-    ? process.env.EXTRA_ORIGINS.split(',').map(o => o.trim()).filter(Boolean)
-    : [])
-].filter(Boolean);
+  'http://127.0.0.1:4173',
+  ...envClientOrigins,
+  ...envExtraOrigins
+];
 
-// Vercel project slug: set on Render as VERCEL_PROJECT_NAME (e.g. "saarthiflow")
-// Only preview deployments whose hostname ends with
-// `-<VERCEL_PROJECT_NAME>.vercel.app` or matches the project slug will be allowed.
+// Vercel project slug: optional override from VERCEL_PROJECT_NAME
 const vercelProjectName = process.env.VERCEL_PROJECT_NAME
   ? process.env.VERCEL_PROJECT_NAME.trim().toLowerCase()
   : null;
 
-function isTrustedVercelOrigin(origin) {
-  if (!vercelProjectName) return false;
+function isAllowedOrigin(origin) {
+  if (!origin) return true;
+  const clean = sanitizeOrigin(origin).toLowerCase();
+
+  // 1. Direct match with configured / production origins
+  if (allowedOrigins.some(o => o.toLowerCase() === clean)) {
+    return true;
+  }
+
+  // 2. Allow any localhost or 127.0.0.1 development port
+  if (clean.startsWith('http://localhost:') || clean.startsWith('http://127.0.0.1:')) {
+    return true;
+  }
+
+  // 3. Trusted Vercel preview domains for this project
   try {
-    const { hostname } = new URL(origin);
+    const { hostname } = new URL(clean);
     if (!hostname.endsWith('.vercel.app')) return false;
-    // Allow: <project>.vercel.app  (production alias)
-    if (hostname === `${vercelProjectName}.vercel.app`) return true;
-    // Allow: <project>-<hash/branch>-<team>.vercel.app  (preview deployments)
-    // The hostname must contain the project name as a segment component.
-    const parts = hostname.replace('.vercel.app', '').split('-');
-    // Vercel preview hostnames: <project-slug>-<gitbranch or hash>-<team>.vercel.app
-    // We require the slug to appear at the start.
-    return hostname.startsWith(`${vercelProjectName}-`);
+
+    // Production & preview hostnames for saarthi-flow-two and saarthiflow
+    if (hostname === 'saarthi-flow-two.vercel.app' || hostname.startsWith('saarthi-flow-two-')) {
+      return true;
+    }
+    if (hostname === 'saarthiflow.vercel.app' || hostname.startsWith('saarthiflow-')) {
+      return true;
+    }
+    if (vercelProjectName) {
+      if (hostname === `${vercelProjectName}.vercel.app` || hostname.startsWith(`${vercelProjectName}-`)) {
+        return true;
+      }
+    }
   } catch {
     return false;
   }
+
+  return false;
 }
 
-app.use(cors({
+const corsOptions = {
   origin: (origin, callback) => {
     // Allow requests with no origin (e.g. mobile apps, curl, server-to-server)
-    if (!origin) {
-      return callback(null, true);
-    }
-    if (
-      allowedOrigins.includes(origin) ||
-      origin.startsWith('http://localhost:') ||
-      origin.startsWith('http://127.0.0.1:') ||
-      isTrustedVercelOrigin(origin)
-    ) {
+    if (!origin || isAllowedOrigin(origin)) {
       return callback(null, true);
     }
     console.warn(`[CORS] Blocked origin: ${origin}`);
-    return callback(new Error(`Origin ${origin} not allowed by CORS`));
+    return callback(null, false);
   },
-  credentials: true
-}));
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS', 'HEAD'],
+  allowedHeaders: ['Content-Type', 'Authorization', 'Accept', 'X-Requested-With', 'Origin'],
+  exposedHeaders: ['Content-Range', 'X-Content-Range'],
+  optionsSuccessStatus: 204
+};
+
+app.use(cors(corsOptions));
 
 app.use(express.json({ limit: '1mb' }));
 
@@ -86,11 +117,14 @@ app.use((req, res, next) => {
 // 1. HEALTH CHECK
 // ==========================================
 app.get('/api/health', async (req, res) => {
+  const isNvidiaConfigured = Boolean(process.env.NVIDIA_API_KEY && process.env.NVIDIA_API_KEY !== 'your_nvidia_api_key_here');
   res.json({
     status: 'ok',
     app: 'SaarthiFlow API',
     version: '1.0.0',
     database: db.isSupabaseConfigured ? 'supabase-postgresql' : 'local-persistent-store',
+    aiProvider: isNvidiaConfigured ? 'nvidia' : 'fallback-rules',
+    nvidiaConfigured: isNvidiaConfigured,
     geminiConfigured: Boolean(process.env.GEMINI_API_KEY && process.env.GEMINI_API_KEY !== 'your_gemini_api_key_here'),
     timestamp: new Date().toISOString()
   });
@@ -264,6 +298,7 @@ app.post('/api/agent/plan', async (req, res, next) => {
       summary: planResult.summary,
       tasks: planResult.tasks,
       isSimulated: planResult.isSimulated,
+      model: planResult.model || null,
       warning: planResult.warning || null
     });
   } catch (err) {

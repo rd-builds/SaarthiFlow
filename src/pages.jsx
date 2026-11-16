@@ -142,7 +142,7 @@ export function Overview() {
             <Title right={null}>
               Agent Command <Sparkles size={18} className="text-brand-500" />
             </Title>
-            <p className="-mt-3 mb-3 text-sm text-ink/60">Tell SaarthiFlow what you want to do, and Gemini will plan the rest.</p>
+            <p className="-mt-3 mb-3 text-sm text-ink/60">Tell SaarthiFlow what you want to do, and AI will plan the rest.</p>
             <div className="rounded-2xl border border-brand-100 bg-white/80 p-3">
               <textarea
                 value={cmd}
@@ -369,7 +369,7 @@ export function Agent() {
         tasks: result.tasks
       });
       setProposalId(result.proposalId);
-      setAiMode(result.isSimulated ? 'Deterministic Rules' : 'Gemini 1.5 Flash');
+      setAiMode(result.isSimulated ? 'Deterministic Rules' : (result.model || 'Gemini AI'));
 
       setMsgs(m => [
         ...m,
@@ -380,7 +380,9 @@ export function Agent() {
       ]);
 
       if (result.warning) {
-        showToast(result.warning, 'info');
+        // isSimulated means Gemini was not used — treat as an error-level warning so it's
+        // clearly visible and not mistaken for a normal informational message.
+        showToast(result.warning, result.isSimulated ? 'error' : 'info');
       }
       await refresh(true);
     } catch (err) {
@@ -461,7 +463,7 @@ export function Agent() {
             {busy && (
               <div className="flex items-center gap-2 text-sm text-ink/60">
                 <Loader2 className="animate-spin text-brand-600" size={16} />
-                Analyzing requirements & planning with Gemini…
+                Analyzing requirements & planning with AI…
               </div>
             )}
           </div>

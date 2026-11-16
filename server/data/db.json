@@ -1,6 +1,426 @@
 {
   "tasks": [
     {
+      "id": "task-mwitish3-2qyf3",
+      "title": "Record and edit 2-minute demo walkthrough video",
+      "project": "Hackathon",
+      "priority": "High",
+      "status": "todo",
+      "due": "2026-11-19",
+      "created_at": "2026-11-16T05:23:41.607Z",
+      "updated_at": "2026-11-16T05:23:41.607Z"
+    },
+    {
+      "id": "task-mwitisgz-mk5f3",
+      "title": "Finalize README, architecture diagram and screenshots (Consolidated)",
+      "project": "Hackathon",
+      "priority": "Medium",
+      "status": "todo",
+      "due": "2026-11-18",
+      "created_at": "2026-11-16T05:23:41.603Z",
+      "updated_at": "2026-11-16T05:23:41.603Z"
+    },
+    {
+      "id": "task-mwitisgx-yqo4a",
+      "title": "Review problem statement constraints and scoring rubric (Consolidated)",
+      "project": "Hackathon",
+      "priority": "Medium",
+      "status": "todo",
+      "due": "2026-11-18",
+      "created_at": "2026-11-16T05:23:41.601Z",
+      "updated_at": "2026-11-16T05:23:41.601Z"
+    },
+    {
+      "id": "task-mwitisgu-lphjt",
+      "title": "Review problem statement constraints and scoring rubric (Consolidated)",
+      "project": "Hackathon",
+      "priority": "Medium",
+      "status": "todo",
+      "due": "2026-11-18",
+      "created_at": "2026-11-16T05:23:41.598Z",
+      "updated_at": "2026-11-16T05:23:41.598Z"
+    },
+    {
+      "id": "task-mwitisgq-vd8x4",
+      "title": "Finalize README, architecture diagram and screenshots (Consolidated)",
+      "project": "Hackathon",
+      "priority": "Medium",
+      "status": "todo",
+      "due": "2026-11-18",
+      "created_at": "2026-11-16T05:23:41.594Z",
+      "updated_at": "2026-11-16T05:23:41.594Z"
+    },
+    {
+      "id": "task-mwitisgn-8cnz5",
+      "title": "Finalize README, architecture diagram and screenshots (Consolidated)",
+      "project": "Hackathon",
+      "priority": "Medium",
+      "status": "todo",
+      "due": "2026-11-18",
+      "created_at": "2026-11-16T05:23:41.591Z",
+      "updated_at": "2026-11-16T05:23:41.591Z"
+    },
+    {
+      "id": "task-mwitisgi-ior0z",
+      "title": "Finalize README, architecture diagram and screenshots (Consolidated)",
+      "project": "Hackathon",
+      "priority": "Medium",
+      "status": "todo",
+      "due": "2026-11-18",
+      "created_at": "2026-11-16T05:23:41.586Z",
+      "updated_at": "2026-11-16T05:23:41.586Z"
+    },
+    {
+      "id": "task-mwitisgf-wszqr",
+      "title": "Finalize README, architecture diagram and screenshots (Consolidated)",
+      "project": "Hackathon",
+      "priority": "Medium",
+      "status": "todo",
+      "due": "2026-11-18",
+      "created_at": "2026-11-16T05:23:41.583Z",
+      "updated_at": "2026-11-16T05:23:41.583Z"
+    },
+    {
+      "id": "task-mwitisga-l4uyd",
+      "title": "Finalize README, architecture diagram and screenshots (Consolidated)",
+      "project": "Hackathon",
+      "priority": "Medium",
+      "status": "todo",
+      "due": "2026-11-18",
+      "created_at": "2026-11-16T05:23:41.578Z",
+      "updated_at": "2026-11-16T05:23:41.578Z"
+    },
+    {
+      "id": "task-mwitisg3-2qp1t",
+      "title": "Review problem statement constraints and scoring rubric",
+      "project": "Hackathon",
+      "priority": "Medium",
+      "status": "todo",
+      "due": "2026-11-18",
+      "created_at": "2026-11-16T05:23:41.571Z",
+      "updated_at": "2026-11-16T05:23:41.571Z"
+    },
+    {
+      "id": "task-mwitisg0-h19mo",
+      "title": "Register team on event portal and verify email confirmation (Consolidated)",
+      "project": "Hackathon",
+      "priority": "High",
+      "status": "todo",
+      "due": "2026-11-17",
+      "created_at": "2026-11-16T05:23:41.568Z",
+      "updated_at": "2026-11-16T05:23:41.568Z"
+    },
+    {
+      "id": "task-mwitisfx-npqfq",
+      "title": "Register team on event portal and verify email confirmation (Consolidated)",
+      "project": "Hackathon",
+      "priority": "High",
+      "status": "todo",
+      "due": "2026-11-17",
+      "created_at": "2026-11-16T05:23:41.565Z",
+      "updated_at": "2026-11-16T05:23:41.565Z"
+    },
+    {
+      "id": "task-mwitisfs-x5uj2",
+      "title": "Register team on event portal and verify email confirmation (Consolidated)",
+      "project": "Hackathon",
+      "priority": "High",
+      "status": "todo",
+      "due": "2026-11-17",
+      "created_at": "2026-11-16T05:23:41.560Z",
+      "updated_at": "2026-11-16T05:23:41.560Z"
+    },
+    {
+      "id": "task-mwitisfm-a31xd",
+      "title": "Block 2 hours for focused deep work on MVP core",
+      "project": "Hackathon",
+      "priority": "High",
+      "status": "todo",
+      "due": "2026-11-16",
+      "created_at": "2026-11-16T05:23:41.554Z",
+      "updated_at": "2026-11-16T05:23:41.554Z"
+    },
+    {
+      "id": "task-mwithy74-4u7y6",
+      "title": "Submit repository link and deck on portal",
+      "project": "Hackathon",
+      "priority": "High",
+      "status": "todo",
+      "due": "2026-11-20",
+      "created_at": "2026-11-16T05:23:02.368Z",
+      "updated_at": "2026-11-16T05:23:02.368Z"
+    },
+    {
+      "id": "task-mwithy6w-x9nvi",
+      "title": "Test all public API endpoints and database integrity",
+      "project": "Hackathon",
+      "priority": "High",
+      "status": "todo",
+      "due": "2026-11-20",
+      "created_at": "2026-11-16T05:23:02.361Z",
+      "updated_at": "2026-11-16T05:23:02.361Z"
+    },
+    {
+      "id": "task-mwithy6u-eva11",
+      "title": "Record and edit 2-minute demo walkthrough video",
+      "project": "Hackathon",
+      "priority": "High",
+      "status": "todo",
+      "due": "2026-11-19",
+      "created_at": "2026-11-16T05:23:02.358Z",
+      "updated_at": "2026-11-16T05:23:02.358Z"
+    },
+    {
+      "id": "task-mwithy6m-t373s",
+      "title": "Finalize README, architecture diagram and screenshots",
+      "project": "Hackathon",
+      "priority": "Medium",
+      "status": "todo",
+      "due": "2026-11-18",
+      "created_at": "2026-11-16T05:23:02.350Z",
+      "updated_at": "2026-11-16T05:23:02.350Z"
+    },
+    {
+      "id": "task-mwithw00-1lvar",
+      "title": "Submit repository link and deck on portal",
+      "project": "Hackathon",
+      "priority": "High",
+      "status": "todo",
+      "due": "2026-11-20",
+      "created_at": "2026-11-16T05:22:59.520Z",
+      "updated_at": "2026-11-16T05:22:59.520Z"
+    },
+    {
+      "id": "task-mwithvzx-vjdz1",
+      "title": "Test all public API endpoints and database integrity",
+      "project": "Hackathon",
+      "priority": "High",
+      "status": "todo",
+      "due": "2026-11-20",
+      "created_at": "2026-11-16T05:22:59.517Z",
+      "updated_at": "2026-11-16T05:22:59.517Z"
+    },
+    {
+      "id": "task-mwithvzq-73itg",
+      "title": "Record and edit 2-minute demo walkthrough video",
+      "project": "Hackathon",
+      "priority": "High",
+      "status": "todo",
+      "due": "2026-11-19",
+      "created_at": "2026-11-16T05:22:59.510Z",
+      "updated_at": "2026-11-16T05:22:59.510Z"
+    },
+    {
+      "id": "task-mwithvzj-snfc7",
+      "title": "Finalize README, architecture diagram and screenshots",
+      "project": "Hackathon",
+      "priority": "Medium",
+      "status": "todo",
+      "due": "2026-11-18",
+      "created_at": "2026-11-16T05:22:59.503Z",
+      "updated_at": "2026-11-16T05:22:59.503Z"
+    },
+    {
+      "id": "task-mwirxsmg-ejn8e",
+      "title": "Submit repository link and deck on portal",
+      "project": "Hackathon",
+      "priority": "High",
+      "status": "todo",
+      "due": "2026-11-20",
+      "created_at": "2026-11-16T04:39:22.408Z",
+      "updated_at": "2026-11-16T04:39:22.408Z"
+    },
+    {
+      "id": "task-mwirxsm8-0ps95",
+      "title": "Test all public API endpoints and database integrity",
+      "project": "Hackathon",
+      "priority": "High",
+      "status": "todo",
+      "due": "2026-11-20",
+      "created_at": "2026-11-16T04:39:22.400Z",
+      "updated_at": "2026-11-16T04:39:22.400Z"
+    },
+    {
+      "id": "task-mwirxslu-i7uib",
+      "title": "Record and edit 2-minute demo walkthrough video (Consolidated)",
+      "project": "Hackathon",
+      "priority": "High",
+      "status": "todo",
+      "due": "2026-11-19",
+      "created_at": "2026-11-16T04:39:22.386Z",
+      "updated_at": "2026-11-16T05:22:57.230Z"
+    },
+    {
+      "id": "task-mwirxsl5-w4akg",
+      "title": "Finalize README, architecture diagram and screenshots (Consolidate)",
+      "project": "Hackathon",
+      "priority": "Medium",
+      "status": "todo",
+      "due": "2026-11-18",
+      "created_at": "2026-11-16T04:39:22.361Z",
+      "updated_at": "2026-11-16T05:22:56.007Z"
+    },
+    {
+      "id": "task-mwirxs50-m47c6",
+      "title": "Prepare presentation slide deck and backup demo recording",
+      "project": "Hackathon",
+      "priority": "Medium",
+      "status": "todo",
+      "due": "2026-11-21",
+      "created_at": "2026-11-16T04:39:21.780Z",
+      "updated_at": "2026-11-16T04:39:21.780Z"
+    },
+    {
+      "id": "task-mwirxs4k-n5vd5",
+      "title": "Implement primary user flow and database schema",
+      "project": "Hackathon",
+      "priority": "High",
+      "status": "done",
+      "due": "2026-11-19",
+      "created_at": "2026-11-16T04:39:21.764Z",
+      "updated_at": "2026-11-16T05:22:57.228Z"
+    },
+    {
+      "id": "task-mwirxs40-z8zy7",
+      "title": "Review problem statement constraints and scoring rubric (Consolidated)",
+      "project": "Hackathon",
+      "priority": "Medium",
+      "status": "todo",
+      "due": "2026-11-18",
+      "created_at": "2026-11-16T04:39:21.744Z",
+      "updated_at": "2026-11-16T05:22:57.185Z"
+    },
+    {
+      "id": "task-mwirxs3m-2sop6",
+      "title": "Register team on event portal and verify email confirmation (Consolidated)",
+      "project": "Hackathon",
+      "priority": "High",
+      "status": "todo",
+      "due": "2026-11-17",
+      "created_at": "2026-11-16T04:39:21.730Z",
+      "updated_at": "2026-11-16T05:22:57.158Z"
+    },
+    {
+      "id": "task-mwirxrjk-nasfl",
+      "title": "Submit repository link and deck on portal",
+      "project": "Hackathon",
+      "priority": "High",
+      "status": "todo",
+      "due": "2026-11-20",
+      "created_at": "2026-11-16T04:39:21.008Z",
+      "updated_at": "2026-11-16T04:39:21.008Z"
+    },
+    {
+      "id": "task-mwirxrj8-kc4r8",
+      "title": "Test all public API endpoints and database integrity",
+      "project": "Hackathon",
+      "priority": "High",
+      "status": "todo",
+      "due": "2026-11-20",
+      "created_at": "2026-11-16T04:39:20.996Z",
+      "updated_at": "2026-11-16T04:39:20.996Z"
+    },
+    {
+      "id": "task-mwirxrin-p4xjr",
+      "title": "Record and edit 2-minute demo walkthrough video (Consolidated)",
+      "project": "Hackathon",
+      "priority": "High",
+      "status": "todo",
+      "due": "2026-11-19",
+      "created_at": "2026-11-16T04:39:20.975Z",
+      "updated_at": "2026-11-16T05:22:57.235Z"
+    },
+    {
+      "id": "task-mwirxrif-3kl4j",
+      "title": "Finalize README, architecture diagram and screenshots (Consolidated)",
+      "project": "Hackathon",
+      "priority": "Medium",
+      "status": "todo",
+      "due": "2026-11-18",
+      "created_at": "2026-11-16T04:39:20.967Z",
+      "updated_at": "2026-11-16T05:22:57.192Z"
+    },
+    {
+      "id": "task-mwirxqwu-ogqdt",
+      "title": "Submit repository link and deck on portal",
+      "project": "Hackathon",
+      "priority": "High",
+      "status": "todo",
+      "due": "2026-11-20",
+      "created_at": "2026-11-16T04:39:20.190Z",
+      "updated_at": "2026-11-16T04:39:20.190Z"
+    },
+    {
+      "id": "task-mwirxqwj-sgv7a",
+      "title": "Test all public API endpoints and database integrity",
+      "project": "Hackathon",
+      "priority": "High",
+      "status": "todo",
+      "due": "2026-11-20",
+      "created_at": "2026-11-16T04:39:20.179Z",
+      "updated_at": "2026-11-16T04:39:20.179Z"
+    },
+    {
+      "id": "task-mwirxqw1-anck9",
+      "title": "Record and edit 2-minute demo walkthrough video",
+      "project": "Hackathon",
+      "priority": "High",
+      "status": "todo",
+      "due": "2026-11-19",
+      "created_at": "2026-11-16T04:39:20.161Z",
+      "updated_at": "2026-11-16T04:39:20.161Z"
+    },
+    {
+      "id": "task-mwirxqvi-lgre4",
+      "title": "Finalize README, architecture diagram and screenshots (Consolidated)",
+      "project": "Hackathon",
+      "priority": "Medium",
+      "status": "todo",
+      "due": "2026-11-18",
+      "created_at": "2026-11-16T04:39:20.142Z",
+      "updated_at": "2026-11-16T05:22:57.202Z"
+    },
+    {
+      "id": "task-mwirxq5x-0a940",
+      "title": "Prepare presentation slide deck and backup demo recording",
+      "project": "Hackathon",
+      "priority": "Medium",
+      "status": "todo",
+      "due": "2026-11-21",
+      "created_at": "2026-11-16T04:39:19.221Z",
+      "updated_at": "2026-11-16T04:39:19.221Z"
+    },
+    {
+      "id": "task-mwirxq5j-xc1vy",
+      "title": "Implement primary user flow and database schema",
+      "project": "Hackathon",
+      "priority": "High",
+      "status": "todo",
+      "due": "2026-11-19",
+      "created_at": "2026-11-16T04:39:19.207Z",
+      "updated_at": "2026-11-16T04:39:19.207Z"
+    },
+    {
+      "id": "task-mwirxq58-rydak",
+      "title": "Review problem statement constraints and scoring rubric (Consolidated)",
+      "project": "Hackathon",
+      "priority": "Medium",
+      "status": "todo",
+      "due": "2026-11-18",
+      "created_at": "2026-11-16T04:39:19.196Z",
+      "updated_at": "2026-11-16T05:22:57.196Z"
+    },
+    {
+      "id": "task-mwirxq4m-8ijhe",
+      "title": "Register team on event portal and verify email confirmation (Consolidated)",
+      "project": "Hackathon",
+      "priority": "High",
+      "status": "todo",
+      "due": "2026-11-17",
+      "created_at": "2026-11-16T04:39:19.174Z",
+      "updated_at": "2026-11-16T05:22:57.161Z"
+    },
+    {
       "id": "task-mwfg6pxp-19pxt",
       "title": "Prepare presentation slide deck and backup demo recording",
       "project": "Hackathon",
@@ -22,23 +442,23 @@
     },
     {
       "id": "task-mwfg6pxf-2smrv",
-      "title": "Review problem statement constraints and scoring rubric",
+      "title": "Review problem statement constraints and scoring rubric (Consolidate)",
       "project": "Hackathon",
       "priority": "Medium",
       "status": "todo",
       "due": "2026-11-18",
       "created_at": "2026-11-13T20:47:04.899Z",
-      "updated_at": "2026-11-13T20:47:04.899Z"
+      "updated_at": "2026-11-16T05:22:55.993Z"
     },
     {
       "id": "task-mwfg6pxb-t3gzz",
-      "title": "Register team on event portal and verify email confirmation",
+      "title": "Register team on event portal and verify email confirmation (Consolidated)",
       "project": "Hackathon",
       "priority": "High",
       "status": "todo",
       "due": "2026-11-17",
       "created_at": "2026-11-13T20:47:04.895Z",
-      "updated_at": "2026-11-13T20:47:04.895Z"
+      "updated_at": "2026-11-16T05:22:57.169Z"
     },
     {
       "id": "task-mwfg6plv-iux2t",
@@ -72,13 +492,13 @@
     },
     {
       "id": "task-mwfg6pli-ibaqd",
-      "title": "Finalize README, architecture diagram and screenshots",
+      "title": "Finalize README, architecture diagram and screenshots (Consolidated)",
       "project": "Hackathon",
       "priority": "Medium",
       "status": "todo",
       "due": "2026-11-18",
       "created_at": "2026-11-13T20:47:04.470Z",
-      "updated_at": "2026-11-13T20:47:04.470Z"
+      "updated_at": "2026-11-16T05:22:57.208Z"
     },
     {
       "id": "task-mwfg5egf-tlpi1",
@@ -105,10 +525,10 @@
       "title": "Sync with mentor and submit progress report",
       "project": "Internships",
       "priority": "Medium",
-      "status": "todo",
+      "status": "done",
       "due": "2026-11-18",
       "created_at": "2026-11-13T20:46:03.368Z",
-      "updated_at": "2026-11-13T20:46:03.368Z"
+      "updated_at": "2026-11-16T05:22:57.218Z"
     },
     {
       "id": "task-mwfg5eg4-ttnm0",
@@ -125,10 +545,10 @@
       "title": "Review all project deadlines and milestones",
       "project": "Planning",
       "priority": "Medium",
-      "status": "todo",
+      "status": "done",
       "due": "2026-11-15",
       "created_at": "2026-11-13T20:46:03.357Z",
-      "updated_at": "2026-11-13T20:46:03.357Z"
+      "updated_at": "2026-11-16T05:22:57.178Z"
     },
     {
       "id": "task-mwfg3sx3-d6yjk",
@@ -155,9 +575,10 @@
       "title": "Submit GSSoC application",
       "project": "Open Source",
       "priority": "High",
-      "status": "todo",
+      "status": "done",
       "due": "2026-11-18",
-      "created_at": "2026-11-13T20:39:12.731Z"
+      "created_at": "2026-11-13T20:39:12.731Z",
+      "updated_at": "2026-11-16T05:22:57.225Z"
     },
     {
       "id": "t-2",
@@ -191,9 +612,10 @@
       "title": "HackOWASP registration",
       "project": "Hackathon",
       "priority": "High",
-      "status": "todo",
+      "status": "done",
       "due": "2026-11-17",
-      "created_at": "2026-11-13T20:39:12.732Z"
+      "created_at": "2026-11-13T20:39:12.732Z",
+      "updated_at": "2026-11-16T05:22:57.173Z"
     },
     {
       "id": "t-6",
@@ -251,10 +673,1948 @@
   ],
   "proposals": [
     {
+      "id": "prop-mwitiknr-erz3h",
+      "title": "Create a checklist for submission",
+      "source": "Agent Studio",
+      "status": "approved",
+      "tasks": [
+        {
+          "id": "p-task-mwitikni-yrk1",
+          "title": "Block 2 hours for focused deep work on MVP core",
+          "project": "Hackathon",
+          "priority": "High",
+          "status": "todo",
+          "due": "2026-11-16",
+          "actionType": "create_task",
+          "targetTaskId": "task-mwfg5efw-1p624"
+        },
+        {
+          "id": "p-task-mwitikni-qcd7",
+          "title": "Register team on event portal and verify email confirmation (Consolidated)",
+          "project": "Hackathon",
+          "priority": "High",
+          "status": "todo",
+          "due": "2026-11-17",
+          "actionType": "create_task",
+          "targetTaskId": "task-mwirxs3m-2sop6"
+        },
+        {
+          "id": "p-task-mwitikni-x1sh",
+          "title": "Register team on event portal and verify email confirmation (Consolidated)",
+          "project": "Hackathon",
+          "priority": "High",
+          "status": "todo",
+          "due": "2026-11-17",
+          "actionType": "create_task",
+          "targetTaskId": "task-mwirxq4m-8ijhe"
+        },
+        {
+          "id": "p-task-mwitikni-0eiz",
+          "title": "Register team on event portal and verify email confirmation (Consolidated)",
+          "project": "Hackathon",
+          "priority": "High",
+          "status": "todo",
+          "due": "2026-11-17",
+          "actionType": "create_task",
+          "targetTaskId": "task-mwfg6pxb-t3gzz"
+        },
+        {
+          "id": "p-task-mwitikni-ugbs",
+          "title": "Review problem statement constraints and scoring rubric",
+          "project": "Hackathon",
+          "priority": "Medium",
+          "status": "todo",
+          "due": "2026-11-18",
+          "actionType": "create_task",
+          "targetTaskId": "task-mwirxs40-z8zy7"
+        },
+        {
+          "id": "p-task-mwitikni-mvy0",
+          "title": "Finalize README, architecture diagram and screenshots (Consolidated)",
+          "project": "Hackathon",
+          "priority": "Medium",
+          "status": "todo",
+          "due": "2026-11-18",
+          "actionType": "create_task",
+          "targetTaskId": "task-mwithy6m-t373s"
+        },
+        {
+          "id": "p-task-mwitikni-n5np",
+          "title": "Finalize README, architecture diagram and screenshots (Consolidated)",
+          "project": "Hackathon",
+          "priority": "Medium",
+          "status": "todo",
+          "due": "2026-11-18",
+          "actionType": "create_task",
+          "targetTaskId": "task-mwithvzj-snfc7"
+        },
+        {
+          "id": "p-task-mwitikni-49jn",
+          "title": "Finalize README, architecture diagram and screenshots (Consolidated)",
+          "project": "Hackathon",
+          "priority": "Medium",
+          "status": "todo",
+          "due": "2026-11-18",
+          "actionType": "create_task",
+          "targetTaskId": "task-mwirxsl5-w4akg"
+        },
+        {
+          "id": "p-task-mwitikni-amqd",
+          "title": "Finalize README, architecture diagram and screenshots (Consolidated)",
+          "project": "Hackathon",
+          "priority": "Medium",
+          "status": "todo",
+          "due": "2026-11-18",
+          "actionType": "create_task",
+          "targetTaskId": "task-mwirxrif-3kl4j"
+        },
+        {
+          "id": "p-task-mwitikni-29d6",
+          "title": "Finalize README, architecture diagram and screenshots (Consolidated)",
+          "project": "Hackathon",
+          "priority": "Medium",
+          "status": "todo",
+          "due": "2026-11-18",
+          "actionType": "create_task",
+          "targetTaskId": "task-mwirxqvi-lgre4"
+        },
+        {
+          "id": "p-task-mwitikni-p9et",
+          "title": "Review problem statement constraints and scoring rubric (Consolidated)",
+          "project": "Hackathon",
+          "priority": "Medium",
+          "status": "todo",
+          "due": "2026-11-18",
+          "actionType": "create_task",
+          "targetTaskId": "task-mwirxq58-rydak"
+        },
+        {
+          "id": "p-task-mwitikni-dqor",
+          "title": "Review problem statement constraints and scoring rubric (Consolidated)",
+          "project": "Hackathon",
+          "priority": "Medium",
+          "status": "todo",
+          "due": "2026-11-18",
+          "actionType": "create_task",
+          "targetTaskId": "task-mwfg6pxf-2smrv"
+        },
+        {
+          "id": "p-task-mwitikni-5mx7",
+          "title": "Finalize README, architecture diagram and screenshots (Consolidated)",
+          "project": "Hackathon",
+          "priority": "Medium",
+          "status": "todo",
+          "due": "2026-11-18",
+          "actionType": "create_task",
+          "targetTaskId": "task-mwfg6pli-ibaqd"
+        },
+        {
+          "id": "p-task-mwitikni-fsyv",
+          "title": "Record and edit 2-minute demo walkthrough video",
+          "project": "Hackathon",
+          "priority": "High",
+          "status": "todo",
+          "due": "2026-11-19",
+          "actionType": "create_task",
+          "targetTaskId": "task-mwithy6u-eva11"
+        }
+      ],
+      "created_at": "2026-11-16T05:23:31.479Z",
+      "decided_at": "2026-11-16T05:23:41.610Z",
+      "execution_result": {
+        "executed": true,
+        "totalActions": 14,
+        "successCount": 14,
+        "failureCount": 0,
+        "results": [
+          {
+            "actionType": "create_task",
+            "title": "Block 2 hours for focused deep work on MVP core",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwitisfm-a31xd"
+          },
+          {
+            "actionType": "create_task",
+            "title": "Register team on event portal and verify email confirmation (Consolidated)",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwitisfs-x5uj2"
+          },
+          {
+            "actionType": "create_task",
+            "title": "Register team on event portal and verify email confirmation (Consolidated)",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwitisfx-npqfq"
+          },
+          {
+            "actionType": "create_task",
+            "title": "Register team on event portal and verify email confirmation (Consolidated)",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwitisg0-h19mo"
+          },
+          {
+            "actionType": "create_task",
+            "title": "Review problem statement constraints and scoring rubric",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwitisg3-2qp1t"
+          },
+          {
+            "actionType": "create_task",
+            "title": "Finalize README, architecture diagram and screenshots (Consolidated)",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwitisga-l4uyd"
+          },
+          {
+            "actionType": "create_task",
+            "title": "Finalize README, architecture diagram and screenshots (Consolidated)",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwitisgf-wszqr"
+          },
+          {
+            "actionType": "create_task",
+            "title": "Finalize README, architecture diagram and screenshots (Consolidated)",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwitisgi-ior0z"
+          },
+          {
+            "actionType": "create_task",
+            "title": "Finalize README, architecture diagram and screenshots (Consolidated)",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwitisgn-8cnz5"
+          },
+          {
+            "actionType": "create_task",
+            "title": "Finalize README, architecture diagram and screenshots (Consolidated)",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwitisgq-vd8x4"
+          },
+          {
+            "actionType": "create_task",
+            "title": "Review problem statement constraints and scoring rubric (Consolidated)",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwitisgu-lphjt"
+          },
+          {
+            "actionType": "create_task",
+            "title": "Review problem statement constraints and scoring rubric (Consolidated)",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwitisgx-yqo4a"
+          },
+          {
+            "actionType": "create_task",
+            "title": "Finalize README, architecture diagram and screenshots (Consolidated)",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwitisgz-mk5f3"
+          },
+          {
+            "actionType": "create_task",
+            "title": "Record and edit 2-minute demo walkthrough video",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwitish3-2qyf3"
+          }
+        ],
+        "executedAt": "2026-11-16T05:23:41.610Z"
+      }
+    },
+    {
+      "id": "prop-mwithid5-3rhux",
+      "title": "Create a checklist for submission",
+      "source": "Agent Studio",
+      "status": "approved",
+      "tasks": [
+        {
+          "id": "p-task-mwithicz-szxf",
+          "title": "Register team on event portal and verify email confirmation (Consolidate)",
+          "project": "Hackathon",
+          "priority": "High",
+          "status": "todo",
+          "due": "2026-11-17",
+          "actionType": "update_task",
+          "targetTaskId": "task-mwirxs3m-2sop6"
+        },
+        {
+          "id": "p-task-mwithicz-j099",
+          "title": "Register team on event portal and verify email confirmation (Consolidate)",
+          "project": "Hackathon",
+          "priority": "High",
+          "status": "todo",
+          "due": "2026-11-17",
+          "actionType": "update_task",
+          "targetTaskId": "task-mwirxq4m-8ijhe"
+        },
+        {
+          "id": "p-task-mwithicz-vohh",
+          "title": "Register team on event portal and verify email confirmation (Consolidate)",
+          "project": "Hackathon",
+          "priority": "High",
+          "status": "todo",
+          "due": "2026-11-17",
+          "actionType": "update_task",
+          "targetTaskId": "task-mwfg6pxb-t3gzz"
+        },
+        {
+          "id": "p-task-mwithicz-ljpc",
+          "title": "Register team for HackOWASP",
+          "project": "Hackathon",
+          "priority": "High",
+          "status": "todo",
+          "due": "2026-11-17",
+          "actionType": "complete_task",
+          "targetTaskId": "t-5"
+        },
+        {
+          "id": "p-task-mwithid0-jahq",
+          "title": "Submit GSSoC application",
+          "project": "Open Source",
+          "priority": "High",
+          "status": "todo",
+          "due": "2026-11-18",
+          "actionType": "complete_task",
+          "targetTaskId": "t-1"
+        },
+        {
+          "id": "p-task-mwithid0-5yuv",
+          "title": "Review problem statement constraints and scoring rubric (Consolidate)",
+          "project": "Hackathon",
+          "priority": "Medium",
+          "status": "todo",
+          "due": "2026-11-18",
+          "actionType": "update_task",
+          "targetTaskId": "task-mwirxs40-z8zy7"
+        },
+        {
+          "id": "p-task-mwithid0-2j89",
+          "title": "Review problem statement constraints and scoring rubric (Consolidate)",
+          "project": "Hackathon",
+          "priority": "Medium",
+          "status": "todo",
+          "due": "2026-11-18",
+          "actionType": "update_task",
+          "targetTaskId": "task-mwirxq58-rydak"
+        },
+        {
+          "id": "p-task-mwithid0-c6g6",
+          "title": "Review problem statement constraints and scoring rubric (Consolidate)",
+          "project": "Hackathon",
+          "priority": "Medium",
+          "status": "todo",
+          "due": "2026-11-18",
+          "actionType": "update_task",
+          "targetTaskId": "task-mwfg6pxf-2smrv"
+        },
+        {
+          "id": "p-task-mwithid0-xzpr",
+          "title": "Finalize README, architecture diagram and screenshots (Consolidate)",
+          "project": "Hackathon",
+          "priority": "Medium",
+          "status": "todo",
+          "due": "2026-11-18",
+          "actionType": "update_task",
+          "targetTaskId": "task-mwirxrif-3kl4j"
+        },
+        {
+          "id": "p-task-mwithid0-5kiq",
+          "title": "Finalize README, architecture diagram and screenshots (Consolidate)",
+          "project": "Hackathon",
+          "priority": "Medium",
+          "status": "todo",
+          "due": "2026-11-18",
+          "actionType": "update_task",
+          "targetTaskId": "task-mwirxqvi-lgre4"
+        },
+        {
+          "id": "p-task-mwithid0-zmz8",
+          "title": "Finalize README, architecture diagram and screenshots (Consolidate)",
+          "project": "Hackathon",
+          "priority": "Medium",
+          "status": "todo",
+          "due": "2026-11-18",
+          "actionType": "update_task",
+          "targetTaskId": "task-mwirxsl5-w4akg"
+        },
+        {
+          "id": "p-task-mwithid0-4fx1",
+          "title": "Sync with mentor and submit progress report",
+          "project": "Internships",
+          "priority": "Medium",
+          "status": "todo",
+          "due": "2026-11-18",
+          "actionType": "complete_task",
+          "targetTaskId": "task-mwfg5eg8-cf1jy"
+        },
+        {
+          "id": "p-task-mwithid0-pbkw",
+          "title": "Implement primary user flow and database schema",
+          "project": "Hackathon",
+          "priority": "High",
+          "status": "todo",
+          "due": "2026-11-19",
+          "actionType": "complete_task",
+          "targetTaskId": "task-mwirxs4k-n5vd5"
+        },
+        {
+          "id": "p-task-mwithid0-f30f",
+          "title": "Record and edit 2-minute demo walkthrough video (Consolidate)",
+          "project": "Hackathon",
+          "priority": "High",
+          "status": "todo",
+          "due": "2026-11-19",
+          "actionType": "update_task",
+          "targetTaskId": "task-mwirxslu-i7uib"
+        },
+        {
+          "id": "p-task-mwithid0-q6mn",
+          "title": "Record and edit 2-minute demo walkthrough video (Consolidate)",
+          "project": "Hackathon",
+          "priority": "High",
+          "status": "todo",
+          "due": "2026-11-19",
+          "actionType": "update_task",
+          "targetTaskId": "task-mwirxrin-p4xjr"
+        }
+      ],
+      "created_at": "2026-11-16T05:22:41.849Z",
+      "decided_at": "2026-11-16T05:22:56.025Z",
+      "execution_result": {
+        "executed": true,
+        "totalActions": 15,
+        "successCount": 15,
+        "failureCount": 0,
+        "results": [
+          {
+            "actionType": "update_task",
+            "title": "Register team on event portal and verify email confirmation (Consolidate)",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwirxs3m-2sop6"
+          },
+          {
+            "actionType": "update_task",
+            "title": "Register team on event portal and verify email confirmation (Consolidate)",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwirxq4m-8ijhe"
+          },
+          {
+            "actionType": "update_task",
+            "title": "Register team on event portal and verify email confirmation (Consolidate)",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwfg6pxb-t3gzz"
+          },
+          {
+            "actionType": "complete_task",
+            "title": "Register team for HackOWASP",
+            "success": true,
+            "error": null,
+            "taskId": "t-5"
+          },
+          {
+            "actionType": "complete_task",
+            "title": "Submit GSSoC application",
+            "success": true,
+            "error": null,
+            "taskId": "t-1"
+          },
+          {
+            "actionType": "update_task",
+            "title": "Review problem statement constraints and scoring rubric (Consolidate)",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwirxs40-z8zy7"
+          },
+          {
+            "actionType": "update_task",
+            "title": "Review problem statement constraints and scoring rubric (Consolidate)",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwirxq58-rydak"
+          },
+          {
+            "actionType": "update_task",
+            "title": "Review problem statement constraints and scoring rubric (Consolidate)",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwfg6pxf-2smrv"
+          },
+          {
+            "actionType": "update_task",
+            "title": "Finalize README, architecture diagram and screenshots (Consolidate)",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwirxrif-3kl4j"
+          },
+          {
+            "actionType": "update_task",
+            "title": "Finalize README, architecture diagram and screenshots (Consolidate)",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwirxqvi-lgre4"
+          },
+          {
+            "actionType": "update_task",
+            "title": "Finalize README, architecture diagram and screenshots (Consolidate)",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwirxsl5-w4akg"
+          },
+          {
+            "actionType": "complete_task",
+            "title": "Sync with mentor and submit progress report",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwfg5eg8-cf1jy"
+          },
+          {
+            "actionType": "complete_task",
+            "title": "Implement primary user flow and database schema",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwirxs4k-n5vd5"
+          },
+          {
+            "actionType": "update_task",
+            "title": "Record and edit 2-minute demo walkthrough video (Consolidate)",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwirxslu-i7uib"
+          },
+          {
+            "actionType": "update_task",
+            "title": "Record and edit 2-minute demo walkthrough video (Consolidate)",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwirxrin-p4xjr"
+          }
+        ],
+        "executedAt": "2026-11-16T05:22:56.025Z"
+      }
+    },
+    {
+      "id": "prop-mwith1d0-3ca7k",
+      "title": "Create a checklist for submission",
+      "source": "Agent Studio",
+      "status": "approved",
+      "tasks": [
+        {
+          "id": "p-task-mwith1cs-8i18",
+          "title": "Register team on event portal and verify email confirmation (Consolidated)",
+          "project": "Hackathon",
+          "priority": "High",
+          "status": "todo",
+          "due": "2026-11-17",
+          "actionType": "update_task",
+          "targetTaskId": "task-mwirxs3m-2sop6"
+        },
+        {
+          "id": "p-task-mwith1cs-ppst",
+          "title": "Register team on event portal and verify email confirmation (Consolidated)",
+          "project": "Hackathon",
+          "priority": "High",
+          "status": "todo",
+          "due": "2026-11-17",
+          "actionType": "update_task",
+          "targetTaskId": "task-mwirxq4m-8ijhe"
+        },
+        {
+          "id": "p-task-mwith1cs-1ntf",
+          "title": "Register team on event portal and verify email confirmation (Consolidated)",
+          "project": "Hackathon",
+          "priority": "High",
+          "status": "todo",
+          "due": "2026-11-17",
+          "actionType": "update_task",
+          "targetTaskId": "task-mwfg6pxb-t3gzz"
+        },
+        {
+          "id": "p-task-mwith1cs-fzn8",
+          "title": "Register team for HackOWASP",
+          "project": "Hackathon",
+          "priority": "High",
+          "status": "todo",
+          "due": "2026-11-17",
+          "actionType": "complete_task",
+          "targetTaskId": "t-5"
+        },
+        {
+          "id": "p-task-mwith1cs-lzor",
+          "title": "Block 2 hours of focused deep work on MVP core",
+          "project": "Hackathon",
+          "priority": "High",
+          "status": "todo",
+          "due": "2026-11-16",
+          "actionType": "complete_task",
+          "targetTaskId": "task-mwfg5efw-1p624"
+        },
+        {
+          "id": "p-task-mwith1cs-9a44",
+          "title": "Review problem statement constraints and scoring rubric (Consolidated)",
+          "project": "Hackathon",
+          "priority": "Medium",
+          "status": "todo",
+          "due": "2026-11-18",
+          "actionType": "update_task",
+          "targetTaskId": "task-mwirxs40-z8zy7"
+        },
+        {
+          "id": "p-task-mwith1cs-zdwr",
+          "title": "Finalize README, architecture diagram and screenshots (Consolidated)",
+          "project": "Hackathon",
+          "priority": "Medium",
+          "status": "todo",
+          "due": "2026-11-18",
+          "actionType": "update_task",
+          "targetTaskId": "task-mwirxrif-3kl4j"
+        },
+        {
+          "id": "p-task-mwith1cs-z8eq",
+          "title": "Review problem statement constraints and scoring rubric (Consolidated)",
+          "project": "Hackathon",
+          "priority": "Medium",
+          "status": "todo",
+          "due": "2026-11-18",
+          "actionType": "update_task",
+          "targetTaskId": "task-mwirxq58-rydak"
+        },
+        {
+          "id": "p-task-mwith1cs-ys5o",
+          "title": "Finalize README, architecture diagram and screenshots (Consolidated)",
+          "project": "Hackathon",
+          "priority": "Medium",
+          "status": "todo",
+          "due": "2026-11-18",
+          "actionType": "update_task",
+          "targetTaskId": "task-mwirxqvi-lgre4"
+        },
+        {
+          "id": "p-task-mwith1cs-81gg",
+          "title": "Finalize README, architecture diagram and screenshots (Consolidated)",
+          "project": "Hackathon",
+          "priority": "Medium",
+          "status": "todo",
+          "due": "2026-11-18",
+          "actionType": "update_task",
+          "targetTaskId": "task-mwfg6pli-ibaqd"
+        },
+        {
+          "id": "p-task-mwith1cs-f17f",
+          "title": "Sync with mentor and submit progress report",
+          "project": "Internships",
+          "priority": "Medium",
+          "status": "todo",
+          "due": "2026-11-18",
+          "actionType": "complete_task",
+          "targetTaskId": "task-mwfg5eg8-cf1jy"
+        },
+        {
+          "id": "p-task-mwith1cs-hkmd",
+          "title": "Submit GSSoC application",
+          "project": "Open Source",
+          "priority": "High",
+          "status": "todo",
+          "due": "2026-11-18",
+          "actionType": "complete_task",
+          "targetTaskId": "t-1"
+        },
+        {
+          "id": "p-task-mwith1cs-42a9",
+          "title": "Implement primary user flow and database schema",
+          "project": "Hackathon",
+          "priority": "High",
+          "status": "todo",
+          "due": "2026-11-19",
+          "actionType": "complete_task",
+          "targetTaskId": "task-mwirxs4k-n5vd5"
+        },
+        {
+          "id": "p-task-mwith1cs-6q99",
+          "title": "Record and edit 2-minute demo walkthrough video (Consolidated)",
+          "project": "Hackathon",
+          "priority": "High",
+          "status": "todo",
+          "due": "2026-11-19",
+          "actionType": "update_task",
+          "targetTaskId": "task-mwirxslu-i7uib"
+        },
+        {
+          "id": "p-task-mwith1cs-6uk1",
+          "title": "Record and edit 2-minute demo walkthrough video (Consolidated)",
+          "project": "Hackathon",
+          "priority": "High",
+          "status": "todo",
+          "due": "2026-11-19",
+          "actionType": "update_task",
+          "targetTaskId": "task-mwirxrin-p4xjr"
+        }
+      ],
+      "created_at": "2026-11-16T05:22:19.812Z",
+      "decided_at": "2026-11-16T05:22:57.238Z",
+      "execution_result": {
+        "executed": true,
+        "totalActions": 15,
+        "successCount": 15,
+        "failureCount": 0,
+        "results": [
+          {
+            "actionType": "update_task",
+            "title": "Register team on event portal and verify email confirmation (Consolidated)",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwirxs3m-2sop6"
+          },
+          {
+            "actionType": "update_task",
+            "title": "Register team on event portal and verify email confirmation (Consolidated)",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwirxq4m-8ijhe"
+          },
+          {
+            "actionType": "update_task",
+            "title": "Register team on event portal and verify email confirmation (Consolidated)",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwfg6pxb-t3gzz"
+          },
+          {
+            "actionType": "complete_task",
+            "title": "Register team for HackOWASP",
+            "success": true,
+            "error": null,
+            "taskId": "t-5"
+          },
+          {
+            "actionType": "complete_task",
+            "title": "Block 2 hours of focused deep work on MVP core",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwfg5efw-1p624"
+          },
+          {
+            "actionType": "update_task",
+            "title": "Review problem statement constraints and scoring rubric (Consolidated)",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwirxs40-z8zy7"
+          },
+          {
+            "actionType": "update_task",
+            "title": "Finalize README, architecture diagram and screenshots (Consolidated)",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwirxrif-3kl4j"
+          },
+          {
+            "actionType": "update_task",
+            "title": "Review problem statement constraints and scoring rubric (Consolidated)",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwirxq58-rydak"
+          },
+          {
+            "actionType": "update_task",
+            "title": "Finalize README, architecture diagram and screenshots (Consolidated)",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwirxqvi-lgre4"
+          },
+          {
+            "actionType": "update_task",
+            "title": "Finalize README, architecture diagram and screenshots (Consolidated)",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwfg6pli-ibaqd"
+          },
+          {
+            "actionType": "complete_task",
+            "title": "Sync with mentor and submit progress report",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwfg5eg8-cf1jy"
+          },
+          {
+            "actionType": "complete_task",
+            "title": "Submit GSSoC application",
+            "success": true,
+            "error": null,
+            "taskId": "t-1"
+          },
+          {
+            "actionType": "complete_task",
+            "title": "Implement primary user flow and database schema",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwirxs4k-n5vd5"
+          },
+          {
+            "actionType": "update_task",
+            "title": "Record and edit 2-minute demo walkthrough video (Consolidated)",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwirxslu-i7uib"
+          },
+          {
+            "actionType": "update_task",
+            "title": "Record and edit 2-minute demo walkthrough video (Consolidated)",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwirxrin-p4xjr"
+          }
+        ],
+        "executedAt": "2026-11-16T05:22:57.238Z"
+      }
+    },
+    {
+      "id": "prop-mwitawgt-wruf6",
+      "title": "Create a checklist for submission",
+      "source": "Agent Studio",
+      "status": "approved",
+      "tasks": [
+        {
+          "id": "p-task-mwitawgp-31ys",
+          "title": "Finalize README, architecture diagram and screenshots",
+          "priority": "Medium",
+          "due": "2026-11-18",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        },
+        {
+          "id": "p-task-mwitawgp-p263",
+          "title": "Record and edit 2-minute demo walkthrough video",
+          "priority": "High",
+          "due": "2026-11-19",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        },
+        {
+          "id": "p-task-mwitawgp-4ynt",
+          "title": "Test all public API endpoints and database integrity",
+          "priority": "High",
+          "due": "2026-11-20",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        },
+        {
+          "id": "p-task-mwitawgp-ewro",
+          "title": "Submit repository link and deck on portal",
+          "priority": "High",
+          "due": "2026-11-20",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        }
+      ],
+      "created_at": "2026-11-16T05:17:33.533Z",
+      "decided_at": "2026-11-16T05:22:59.526Z",
+      "execution_result": {
+        "executed": true,
+        "totalActions": 4,
+        "successCount": 4,
+        "failureCount": 0,
+        "results": [
+          {
+            "actionType": "create_task",
+            "title": "Finalize README, architecture diagram and screenshots",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwithvzj-snfc7"
+          },
+          {
+            "actionType": "create_task",
+            "title": "Record and edit 2-minute demo walkthrough video",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwithvzq-73itg"
+          },
+          {
+            "actionType": "create_task",
+            "title": "Test all public API endpoints and database integrity",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwithvzx-vjdz1"
+          },
+          {
+            "actionType": "create_task",
+            "title": "Submit repository link and deck on portal",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwithw00-1lvar"
+          }
+        ],
+        "executedAt": "2026-11-16T05:22:59.526Z"
+      }
+    },
+    {
+      "id": "prop-mwit5rsx-3vyi6",
+      "title": "Create a checklist for submission",
+      "source": "Agent Studio",
+      "status": "rejected",
+      "tasks": [
+        {
+          "id": "p-task-mwit5rst-s4la",
+          "title": "Finalize README, architecture diagram and screenshots",
+          "priority": "Medium",
+          "due": "2026-11-18",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        },
+        {
+          "id": "p-task-mwit5rst-gdaa",
+          "title": "Record and edit 2-minute demo walkthrough video",
+          "priority": "High",
+          "due": "2026-11-19",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        },
+        {
+          "id": "p-task-mwit5rst-4hf8",
+          "title": "Test all public API endpoints and database integrity",
+          "priority": "High",
+          "due": "2026-11-20",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        },
+        {
+          "id": "p-task-mwit5rst-q4dw",
+          "title": "Submit repository link and deck on portal",
+          "priority": "High",
+          "due": "2026-11-20",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        }
+      ],
+      "created_at": "2026-11-16T05:13:34.209Z",
+      "decided_at": "2026-11-16T05:23:04.605Z",
+      "execution_result": {
+        "executed": false,
+        "reason": "Proposal rejected by user",
+        "actionsCount": 0
+      }
+    },
+    {
+      "id": "prop-mwit501y-31cf1",
+      "title": "Create a checklist for submission",
+      "source": "Agent Studio",
+      "status": "approved",
+      "tasks": [
+        {
+          "id": "p-task-mwit501o-dpkl",
+          "title": "Finalize README, architecture diagram and screenshots",
+          "priority": "Medium",
+          "due": "2026-11-18",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        },
+        {
+          "id": "p-task-mwit501o-nn3b",
+          "title": "Record and edit 2-minute demo walkthrough video",
+          "priority": "High",
+          "due": "2026-11-19",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        },
+        {
+          "id": "p-task-mwit501o-mb7u",
+          "title": "Test all public API endpoints and database integrity",
+          "priority": "High",
+          "due": "2026-11-20",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        },
+        {
+          "id": "p-task-mwit501o-z2tt",
+          "title": "Submit repository link and deck on portal",
+          "priority": "High",
+          "due": "2026-11-20",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        }
+      ],
+      "created_at": "2026-11-16T05:12:58.246Z",
+      "decided_at": "2026-11-16T05:23:02.372Z",
+      "execution_result": {
+        "executed": true,
+        "totalActions": 4,
+        "successCount": 4,
+        "failureCount": 0,
+        "results": [
+          {
+            "actionType": "create_task",
+            "title": "Finalize README, architecture diagram and screenshots",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwithy6m-t373s"
+          },
+          {
+            "actionType": "create_task",
+            "title": "Record and edit 2-minute demo walkthrough video",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwithy6u-eva11"
+          },
+          {
+            "actionType": "create_task",
+            "title": "Test all public API endpoints and database integrity",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwithy6w-x9nvi"
+          },
+          {
+            "actionType": "create_task",
+            "title": "Submit repository link and deck on portal",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwithy74-4u7y6"
+          }
+        ],
+        "executedAt": "2026-11-16T05:23:02.372Z"
+      }
+    },
+    {
+      "id": "prop-mwiszsa7-hybhp",
+      "title": "Create a checklist for submission",
+      "source": "Agent Studio",
+      "status": "rejected",
+      "tasks": [
+        {
+          "id": "p-task-mwiszsa0-00t3",
+          "title": "Finalize README, architecture diagram and screenshots",
+          "priority": "Medium",
+          "due": "2026-11-18",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        },
+        {
+          "id": "p-task-mwiszsa0-7gfo",
+          "title": "Record and edit 2-minute demo walkthrough video",
+          "priority": "High",
+          "due": "2026-11-19",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        },
+        {
+          "id": "p-task-mwiszsa0-4hqr",
+          "title": "Test all public API endpoints and database integrity",
+          "priority": "High",
+          "due": "2026-11-20",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        },
+        {
+          "id": "p-task-mwiszsa0-lfjl",
+          "title": "Submit repository link and deck on portal",
+          "priority": "High",
+          "due": "2026-11-20",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        }
+      ],
+      "created_at": "2026-11-16T05:08:54.895Z",
+      "decided_at": "2026-11-16T05:23:05.402Z",
+      "execution_result": {
+        "executed": false,
+        "reason": "Proposal rejected by user",
+        "actionsCount": 0
+      }
+    },
+    {
+      "id": "prop-mwisppgi-k6tyx",
+      "title": "Create a checklist for submission",
+      "source": "Agent Studio",
+      "status": "rejected",
+      "tasks": [
+        {
+          "id": "p-task-mwisppgc-glxb",
+          "title": "Finalize README, architecture diagram and screenshots",
+          "priority": "Medium",
+          "due": "2026-11-18",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        },
+        {
+          "id": "p-task-mwisppgc-66ak",
+          "title": "Record and edit 2-minute demo walkthrough video",
+          "priority": "High",
+          "due": "2026-11-19",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        },
+        {
+          "id": "p-task-mwisppgc-fx96",
+          "title": "Test all public API endpoints and database integrity",
+          "priority": "High",
+          "due": "2026-11-20",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        },
+        {
+          "id": "p-task-mwisppgc-wgde",
+          "title": "Submit repository link and deck on portal",
+          "priority": "High",
+          "due": "2026-11-20",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        }
+      ],
+      "created_at": "2026-11-16T05:01:04.674Z",
+      "decided_at": "2026-11-16T05:23:06.007Z",
+      "execution_result": {
+        "executed": false,
+        "reason": "Proposal rejected by user",
+        "actionsCount": 0
+      }
+    },
+    {
+      "id": "prop-mwisoygw-y292g",
+      "title": "Create a checklist for submission",
+      "source": "Agent Studio",
+      "status": "rejected",
+      "tasks": [
+        {
+          "id": "p-task-mwisoygr-zlah",
+          "title": "Finalize README, architecture diagram and screenshots",
+          "priority": "Medium",
+          "due": "2026-11-18",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        },
+        {
+          "id": "p-task-mwisoygr-w356",
+          "title": "Record and edit 2-minute demo walkthrough video",
+          "priority": "High",
+          "due": "2026-11-19",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        },
+        {
+          "id": "p-task-mwisoygr-3iqk",
+          "title": "Test all public API endpoints and database integrity",
+          "priority": "High",
+          "due": "2026-11-20",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        },
+        {
+          "id": "p-task-mwisoygr-lbr7",
+          "title": "Submit repository link and deck on portal",
+          "priority": "High",
+          "due": "2026-11-20",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        }
+      ],
+      "created_at": "2026-11-16T05:00:29.696Z",
+      "decided_at": "2026-11-16T05:23:06.306Z",
+      "execution_result": {
+        "executed": false,
+        "reason": "Proposal rejected by user",
+        "actionsCount": 0
+      }
+    },
+    {
+      "id": "prop-mwisjy1l-xtjsa",
+      "title": "Irrelevant Tasks",
+      "source": "Agent Studio",
+      "status": "rejected",
+      "tasks": [
+        {
+          "id": "bad-1",
+          "title": "Task that must never exist",
+          "priority": "Low",
+          "due": "2026-11-25",
+          "project": "Spam",
+          "actionType": "create_task"
+        }
+      ],
+      "created_at": "2026-11-16T04:56:35.865Z",
+      "decided_at": "2026-11-16T04:56:35.872Z",
+      "execution_result": {
+        "executed": false,
+        "reason": "Proposal rejected by user",
+        "actionsCount": 0
+      }
+    },
+    {
+      "id": "prop-mwisjy0j-ljckx",
+      "title": "Analyze HackOWASP Hackathon",
+      "source": "Agent Studio",
+      "status": "approved",
+      "tasks": [
+        {
+          "id": "act-1",
+          "title": "Submit HackOWASP Registration Form",
+          "priority": "High",
+          "due": "2026-11-17",
+          "project": "Hackathon",
+          "actionType": "create_task"
+        },
+        {
+          "id": "act-2",
+          "title": "Prepare Architecture Pitch Deck",
+          "priority": "Medium",
+          "due": "2026-11-19",
+          "project": "Hackathon",
+          "actionType": "create_task"
+        }
+      ],
+      "created_at": "2026-11-16T04:56:35.827Z",
+      "decided_at": "2026-11-16T04:56:35.852Z",
+      "execution_result": {
+        "executed": true,
+        "totalActions": 2,
+        "successCount": 2,
+        "failureCount": 0,
+        "results": [
+          {
+            "actionType": "create_task",
+            "title": "Submit HackOWASP Registration Form",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwisjy0w-re4f3"
+          },
+          {
+            "actionType": "create_task",
+            "title": "Prepare Architecture Pitch Deck",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwisjy11-rij1e"
+          }
+        ],
+        "executedAt": "2026-11-16T04:56:35.851Z"
+      }
+    },
+    {
+      "id": "prop-mwisjskm-8uk57",
+      "title": "Unwanted Proposal",
+      "source": "Agent Studio",
+      "status": "rejected",
+      "tasks": [
+        {
+          "id": "p3",
+          "title": "Should never exist in tasks",
+          "priority": "Low",
+          "due": "2026-11-30",
+          "project": "Trash",
+          "actionType": "create_task"
+        }
+      ],
+      "created_at": "2026-11-16T04:56:28.774Z",
+      "decided_at": "2026-11-16T04:56:28.780Z",
+      "execution_result": {
+        "executed": false,
+        "reason": "Proposal rejected by user",
+        "actionsCount": 0
+      }
+    },
+    {
+      "id": "prop-mwisjsjp-lks1q",
+      "title": "Hackathon Deployment Plan",
+      "source": "Agent Studio",
+      "status": "approved",
+      "tasks": [
+        {
+          "id": "p1",
+          "title": "Prepare Dockerfile & env vars",
+          "priority": "High",
+          "due": "2026-11-19",
+          "project": "Hackathon",
+          "actionType": "create_task"
+        },
+        {
+          "id": "p2",
+          "title": "Verify production database migration",
+          "priority": "High",
+          "due": "2026-11-20",
+          "project": "Hackathon",
+          "actionType": "create_task"
+        }
+      ],
+      "created_at": "2026-11-16T04:56:28.741Z",
+      "decided_at": "2026-11-16T04:56:28.759Z",
+      "execution_result": {
+        "executed": true,
+        "totalActions": 2,
+        "successCount": 2,
+        "failureCount": 0,
+        "results": [
+          {
+            "actionType": "create_task",
+            "title": "Prepare Dockerfile & env vars",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwisjsjw-4v46f"
+          },
+          {
+            "actionType": "create_task",
+            "title": "Verify production database migration",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwisjsk2-xrfvw"
+          }
+        ],
+        "executedAt": "2026-11-16T04:56:28.759Z"
+      }
+    },
+    {
+      "id": "prop-mwirhhrm-yqn1d",
+      "title": "Analyze this hackathon page and create a task plan",
+      "source": "Agent Studio",
+      "status": "approved",
+      "tasks": [
+        {
+          "id": "p-task-mwirhhr9-yc47",
+          "title": "Register team on event portal and verify email confirmation",
+          "priority": "High",
+          "due": "2026-11-17",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        },
+        {
+          "id": "p-task-mwirhhr9-c3gh",
+          "title": "Review problem statement constraints and scoring rubric",
+          "priority": "Medium",
+          "due": "2026-11-18",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        },
+        {
+          "id": "p-task-mwirhhr9-fx62",
+          "title": "Implement primary user flow and database schema",
+          "priority": "High",
+          "due": "2026-11-19",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        },
+        {
+          "id": "p-task-mwirhhr9-o6ou",
+          "title": "Prepare presentation slide deck and backup demo recording",
+          "priority": "Medium",
+          "due": "2026-11-21",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        }
+      ],
+      "created_at": "2026-11-16T04:26:41.842Z",
+      "decided_at": "2026-11-16T04:39:19.233Z",
+      "execution_result": {
+        "executed": true,
+        "totalActions": 4,
+        "successCount": 4,
+        "failureCount": 0,
+        "results": [
+          {
+            "actionType": "create_task",
+            "title": "Register team on event portal and verify email confirmation",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwirxq4m-8ijhe"
+          },
+          {
+            "actionType": "create_task",
+            "title": "Review problem statement constraints and scoring rubric",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwirxq58-rydak"
+          },
+          {
+            "actionType": "create_task",
+            "title": "Implement primary user flow and database schema",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwirxq5j-xc1vy"
+          },
+          {
+            "actionType": "create_task",
+            "title": "Prepare presentation slide deck and backup demo recording",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwirxq5x-0a940"
+          }
+        ],
+        "executedAt": "2026-11-16T04:39:19.233Z"
+      }
+    },
+    {
+      "id": "prop-mwira72i-0e56g",
+      "title": "Create a checklist for submission",
+      "source": "Agent Studio",
+      "status": "approved",
+      "tasks": [
+        {
+          "id": "p-task-mwira725-7u72",
+          "title": "Finalize README, architecture diagram and screenshots",
+          "priority": "Medium",
+          "due": "2026-11-18",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        },
+        {
+          "id": "p-task-mwira725-6as1",
+          "title": "Record and edit 2-minute demo walkthrough video",
+          "priority": "High",
+          "due": "2026-11-19",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        },
+        {
+          "id": "p-task-mwira725-a2ov",
+          "title": "Test all public API endpoints and database integrity",
+          "priority": "High",
+          "due": "2026-11-20",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        },
+        {
+          "id": "p-task-mwira725-kn1j",
+          "title": "Submit repository link and deck on portal",
+          "priority": "High",
+          "due": "2026-11-20",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        }
+      ],
+      "created_at": "2026-11-16T04:21:01.386Z",
+      "decided_at": "2026-11-16T04:39:20.202Z",
+      "execution_result": {
+        "executed": true,
+        "totalActions": 4,
+        "successCount": 4,
+        "failureCount": 0,
+        "results": [
+          {
+            "actionType": "create_task",
+            "title": "Finalize README, architecture diagram and screenshots",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwirxqvi-lgre4"
+          },
+          {
+            "actionType": "create_task",
+            "title": "Record and edit 2-minute demo walkthrough video",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwirxqw1-anck9"
+          },
+          {
+            "actionType": "create_task",
+            "title": "Test all public API endpoints and database integrity",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwirxqwj-sgv7a"
+          },
+          {
+            "actionType": "create_task",
+            "title": "Submit repository link and deck on portal",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwirxqwu-ogqdt"
+          }
+        ],
+        "executedAt": "2026-11-16T04:39:20.202Z"
+      }
+    },
+    {
+      "id": "prop-mwhz92oo-jdqs7",
+      "title": "Create a checklist for submission",
+      "source": "Agent Studio",
+      "status": "approved",
+      "tasks": [
+        {
+          "id": "p-task-mwhz92o9-oetg",
+          "title": "Finalize README, architecture diagram and screenshots",
+          "priority": "Medium",
+          "due": "2026-11-18",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        },
+        {
+          "id": "p-task-mwhz92o9-l3ls",
+          "title": "Record and edit 2-minute demo walkthrough video",
+          "priority": "High",
+          "due": "2026-11-19",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        },
+        {
+          "id": "p-task-mwhz92o9-svzf",
+          "title": "Test all public API endpoints and database integrity",
+          "priority": "High",
+          "due": "2026-11-20",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        },
+        {
+          "id": "p-task-mwhz92o9-cnhk",
+          "title": "Submit repository link and deck on portal",
+          "priority": "High",
+          "due": "2026-11-20",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        }
+      ],
+      "created_at": "2026-11-15T15:16:19.800Z",
+      "decided_at": "2026-11-16T04:39:21.023Z",
+      "execution_result": {
+        "executed": true,
+        "totalActions": 4,
+        "successCount": 4,
+        "failureCount": 0,
+        "results": [
+          {
+            "actionType": "create_task",
+            "title": "Finalize README, architecture diagram and screenshots",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwirxrif-3kl4j"
+          },
+          {
+            "actionType": "create_task",
+            "title": "Record and edit 2-minute demo walkthrough video",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwirxrin-p4xjr"
+          },
+          {
+            "actionType": "create_task",
+            "title": "Test all public API endpoints and database integrity",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwirxrj8-kc4r8"
+          },
+          {
+            "actionType": "create_task",
+            "title": "Submit repository link and deck on portal",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwirxrjk-nasfl"
+          }
+        ],
+        "executedAt": "2026-11-16T04:39:21.023Z"
+      }
+    },
+    {
+      "id": "prop-mwhz8n15-ql5p7",
+      "title": "Analyze this hackathon page",
+      "source": "Agent Studio",
+      "status": "approved",
+      "tasks": [
+        {
+          "id": "p-task-mwhz8n0w-vrfo",
+          "title": "Register team on event portal and verify email confirmation",
+          "priority": "High",
+          "due": "2026-11-17",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        },
+        {
+          "id": "p-task-mwhz8n0x-6u4y",
+          "title": "Review problem statement constraints and scoring rubric",
+          "priority": "Medium",
+          "due": "2026-11-18",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        },
+        {
+          "id": "p-task-mwhz8n0x-smou",
+          "title": "Implement primary user flow and database schema",
+          "priority": "High",
+          "due": "2026-11-19",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        },
+        {
+          "id": "p-task-mwhz8n0x-jh59",
+          "title": "Prepare presentation slide deck and backup demo recording",
+          "priority": "Medium",
+          "due": "2026-11-21",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        }
+      ],
+      "created_at": "2026-11-15T15:15:59.513Z",
+      "decided_at": "2026-11-16T04:39:21.795Z",
+      "execution_result": {
+        "executed": true,
+        "totalActions": 4,
+        "successCount": 4,
+        "failureCount": 0,
+        "results": [
+          {
+            "actionType": "create_task",
+            "title": "Register team on event portal and verify email confirmation",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwirxs3m-2sop6"
+          },
+          {
+            "actionType": "create_task",
+            "title": "Review problem statement constraints and scoring rubric",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwirxs40-z8zy7"
+          },
+          {
+            "actionType": "create_task",
+            "title": "Implement primary user flow and database schema",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwirxs4k-n5vd5"
+          },
+          {
+            "actionType": "create_task",
+            "title": "Prepare presentation slide deck and backup demo recording",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwirxs50-m47c6"
+          }
+        ],
+        "executedAt": "2026-11-16T04:39:21.795Z"
+      }
+    },
+    {
+      "id": "prop-mwhz8hzl-15du2",
+      "title": "Create a checklist for submission",
+      "source": "Agent Studio",
+      "status": "approved",
+      "tasks": [
+        {
+          "id": "p-task-mwhz8hz2-3p6d",
+          "title": "Finalize README, architecture diagram and screenshots",
+          "priority": "Medium",
+          "due": "2026-11-18",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        },
+        {
+          "id": "p-task-mwhz8hz2-nay1",
+          "title": "Record and edit 2-minute demo walkthrough video",
+          "priority": "High",
+          "due": "2026-11-19",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        },
+        {
+          "id": "p-task-mwhz8hz2-5c5p",
+          "title": "Test all public API endpoints and database integrity",
+          "priority": "High",
+          "due": "2026-11-20",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        },
+        {
+          "id": "p-task-mwhz8hz2-x21x",
+          "title": "Submit repository link and deck on portal",
+          "priority": "High",
+          "due": "2026-11-20",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        }
+      ],
+      "created_at": "2026-11-15T15:15:52.977Z",
+      "decided_at": "2026-11-16T04:39:22.420Z",
+      "execution_result": {
+        "executed": true,
+        "totalActions": 4,
+        "successCount": 4,
+        "failureCount": 0,
+        "results": [
+          {
+            "actionType": "create_task",
+            "title": "Finalize README, architecture diagram and screenshots",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwirxsl5-w4akg"
+          },
+          {
+            "actionType": "create_task",
+            "title": "Record and edit 2-minute demo walkthrough video",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwirxslu-i7uib"
+          },
+          {
+            "actionType": "create_task",
+            "title": "Test all public API endpoints and database integrity",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwirxsm8-0ps95"
+          },
+          {
+            "actionType": "create_task",
+            "title": "Submit repository link and deck on portal",
+            "success": true,
+            "error": null,
+            "taskId": "task-mwirxsmg-ejn8e"
+          }
+        ],
+        "executedAt": "2026-11-16T04:39:22.420Z"
+      }
+    },
+    {
+      "id": "prop-mwhz8a9f-xl8sl",
+      "title": "Create a checklist for submission",
+      "source": "Agent Studio",
+      "status": "rejected",
+      "tasks": [
+        {
+          "id": "p-task-mwhz8a94-zrbp",
+          "title": "Finalize README, architecture diagram and screenshots",
+          "priority": "Medium",
+          "due": "2026-11-18",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        },
+        {
+          "id": "p-task-mwhz8a94-l7ri",
+          "title": "Record and edit 2-minute demo walkthrough video",
+          "priority": "High",
+          "due": "2026-11-19",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        },
+        {
+          "id": "p-task-mwhz8a94-zjbz",
+          "title": "Test all public API endpoints and database integrity",
+          "priority": "High",
+          "due": "2026-11-20",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        },
+        {
+          "id": "p-task-mwhz8a94-aq5h",
+          "title": "Submit repository link and deck on portal",
+          "priority": "High",
+          "due": "2026-11-20",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        }
+      ],
+      "created_at": "2026-11-15T15:15:42.964Z",
+      "decided_at": "2026-11-16T04:39:23.411Z",
+      "execution_result": {
+        "executed": false,
+        "reason": "Proposal rejected by user",
+        "actionsCount": 0
+      }
+    },
+    {
+      "id": "prop-mwhyqt5l-tlibs",
+      "title": "Create a checklist for submission",
+      "source": "Agent Studio",
+      "status": "rejected",
+      "tasks": [
+        {
+          "id": "p-task-mwhyqt55-zv51",
+          "title": "Finalize README, architecture diagram and screenshots",
+          "priority": "Medium",
+          "due": "2026-11-18",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        },
+        {
+          "id": "p-task-mwhyqt55-nks5",
+          "title": "Record and edit 2-minute demo walkthrough video",
+          "priority": "High",
+          "due": "2026-11-19",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        },
+        {
+          "id": "p-task-mwhyqt55-t46m",
+          "title": "Test all public API endpoints and database integrity",
+          "priority": "High",
+          "due": "2026-11-20",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        },
+        {
+          "id": "p-task-mwhyqt55-uz08",
+          "title": "Submit repository link and deck on portal",
+          "priority": "High",
+          "due": "2026-11-20",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        }
+      ],
+      "created_at": "2026-11-15T15:02:07.641Z",
+      "decided_at": "2026-11-16T04:39:24.595Z",
+      "execution_result": {
+        "executed": false,
+        "reason": "Proposal rejected by user",
+        "actionsCount": 0
+      }
+    },
+    {
+      "id": "prop-mwhyoamq-ztbjs",
+      "title": "Create a checklist for submission",
+      "source": "Agent Studio",
+      "status": "rejected",
+      "tasks": [
+        {
+          "id": "p-task-mwhyoamc-240b",
+          "title": "Finalize README, architecture diagram and screenshots",
+          "priority": "Medium",
+          "due": "2026-11-18",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        },
+        {
+          "id": "p-task-mwhyoamc-flwz",
+          "title": "Record and edit 2-minute demo walkthrough video",
+          "priority": "High",
+          "due": "2026-11-19",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        },
+        {
+          "id": "p-task-mwhyoamc-1cq4",
+          "title": "Test all public API endpoints and database integrity",
+          "priority": "High",
+          "due": "2026-11-20",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        },
+        {
+          "id": "p-task-mwhyoamc-j428",
+          "title": "Submit repository link and deck on portal",
+          "priority": "High",
+          "due": "2026-11-20",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        }
+      ],
+      "created_at": "2026-11-15T15:00:10.322Z",
+      "decided_at": "2026-11-16T04:39:25.782Z",
+      "execution_result": {
+        "executed": false,
+        "reason": "Proposal rejected by user",
+        "actionsCount": 0
+      }
+    },
+    {
+      "id": "prop-mwhyl35p-juzyy",
+      "title": "Create a checklist for submission",
+      "source": "Agent Studio",
+      "status": "rejected",
+      "tasks": [
+        {
+          "id": "p-task-mwhyl35d-44fs",
+          "title": "Finalize README, architecture diagram and screenshots",
+          "priority": "Medium",
+          "due": "2026-11-18",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        },
+        {
+          "id": "p-task-mwhyl35d-9e1j",
+          "title": "Record and edit 2-minute demo walkthrough video",
+          "priority": "High",
+          "due": "2026-11-19",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        },
+        {
+          "id": "p-task-mwhyl35d-pin3",
+          "title": "Test all public API endpoints and database integrity",
+          "priority": "High",
+          "due": "2026-11-20",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        },
+        {
+          "id": "p-task-mwhyl35d-f5kf",
+          "title": "Submit repository link and deck on portal",
+          "priority": "High",
+          "due": "2026-11-20",
+          "project": "Hackathon",
+          "actionType": "create_task",
+          "targetTaskId": null
+        }
+      ],
+      "created_at": "2026-11-15T14:57:40.669Z",
+      "decided_at": "2026-11-16T04:39:27.008Z",
+      "execution_result": {
+        "executed": false,
+        "reason": "Proposal rejected by user",
+        "actionsCount": 0
+      }
+    },
+    {
       "id": "prop-mwhwf05c-yjlej",
       "title": "Create a checklist for submission",
       "source": "Agent Studio",
-      "status": "pending",
+      "status": "rejected",
       "tasks": [
         {
           "id": "p-task-mwhwf053-5cnw",
@@ -294,14 +2654,18 @@
         }
       ],
       "created_at": "2026-11-15T13:56:57.600Z",
-      "decided_at": null,
-      "execution_result": null
+      "decided_at": "2026-11-16T05:23:06.623Z",
+      "execution_result": {
+        "executed": false,
+        "reason": "Proposal rejected by user",
+        "actionsCount": 0
+      }
     },
     {
       "id": "prop-mwhwep3k-zwa5r",
       "title": "Create a checklist for submission",
       "source": "Agent Studio",
-      "status": "pending",
+      "status": "rejected",
       "tasks": [
         {
           "id": "p-task-mwhwep33-4up6",
@@ -341,14 +2705,18 @@
         }
       ],
       "created_at": "2026-11-15T13:56:43.280Z",
-      "decided_at": null,
-      "execution_result": null
+      "decided_at": "2026-11-16T04:39:28.152Z",
+      "execution_result": {
+        "executed": false,
+        "reason": "Proposal rejected by user",
+        "actionsCount": 0
+      }
     },
     {
       "id": "prop-mwfgbnk9-83ajv",
       "title": "Reschedule overdue tasks",
       "source": "Agent Studio",
-      "status": "pending",
+      "status": "rejected",
       "tasks": [
         {
           "id": "p-task-mwfgbnk7-dwn6",
@@ -370,14 +2738,18 @@
         }
       ],
       "created_at": "2026-11-13T20:50:55.113Z",
-      "decided_at": null,
-      "execution_result": null
+      "decided_at": "2026-11-16T04:39:30.708Z",
+      "execution_result": {
+        "executed": false,
+        "reason": "Proposal rejected by user",
+        "actionsCount": 0
+      }
     },
     {
       "id": "prop-mwfgbjhu-px31y",
       "title": "Create a checklist for submission",
       "source": "Agent Studio",
-      "status": "pending",
+      "status": "rejected",
       "tasks": [
         {
           "id": "p-task-mwfgbjhq-ggut",
@@ -417,14 +2789,18 @@
         }
       ],
       "created_at": "2026-11-13T20:50:49.842Z",
-      "decided_at": null,
-      "execution_result": null
+      "decided_at": "2026-11-16T05:23:06.932Z",
+      "execution_result": {
+        "executed": false,
+        "reason": "Proposal rejected by user",
+        "actionsCount": 0
+      }
     },
     {
       "id": "prop-mwfgaq2v-k6hx2",
       "title": "Create a checklist for submission",
       "source": "Agent Studio",
-      "status": "pending",
+      "status": "rejected",
       "tasks": [
         {
           "id": "p-task-mwfgaq2o-tnzi",
@@ -464,14 +2840,18 @@
         }
       ],
       "created_at": "2026-11-13T20:50:11.719Z",
-      "decided_at": null,
-      "execution_result": null
+      "decided_at": "2026-11-16T05:23:07.258Z",
+      "execution_result": {
+        "executed": false,
+        "reason": "Proposal rejected by user",
+        "actionsCount": 0
+      }
     },
     {
       "id": "prop-mwfgagsk-fxk1q",
       "title": "Create a checklist for submission",
       "source": "Agent Studio",
-      "status": "pending",
+      "status": "rejected",
       "tasks": [
         {
           "id": "p-task-mwfgagsd-yr26",
@@ -511,8 +2891,12 @@
         }
       ],
       "created_at": "2026-11-13T20:49:59.684Z",
-      "decided_at": null,
-      "execution_result": null
+      "decided_at": "2026-11-16T05:23:07.652Z",
+      "execution_result": {
+        "executed": false,
+        "reason": "Proposal rejected by user",
+        "actionsCount": 0
+      }
     },
     {
       "id": "prop-mwfg6lv2-505qo",
@@ -1026,6 +3410,168 @@
   ],
   "agent_runs": [
     {
+      "id": "run-mwitikni-9z691",
+      "command": "Create a checklist for submission",
+      "status": "planned",
+      "raw_input": "Create a checklist for submission",
+      "output_summary": "Created a submission checklist by identifying all pending, high-priority, and critical tasks related to the Hackathon submission deadline (Nov 18th/19th). The plan focuses on completing documentation, review, and final submission steps.",
+      "proposal_id": null,
+      "created_at": "2026-11-16T05:23:31.470Z"
+    },
+    {
+      "id": "run-mwithid0-r20kr",
+      "command": "Create a checklist for submission",
+      "status": "planned",
+      "raw_input": "Create a checklist for submission",
+      "output_summary": "Created a submission checklist by prioritizing all high and medium priority tasks related to the Hackathon and Open Source deadlines (Nov 17-19). This ensures all prerequisites for final submission are addressed systematically.",
+      "proposal_id": null,
+      "created_at": "2026-11-16T05:22:41.844Z"
+    },
+    {
+      "id": "run-mwith1ct-vjnft",
+      "command": "Create a checklist for submission",
+      "status": "planned",
+      "raw_input": "Create a checklist for submission",
+      "output_summary": "Created a submission checklist by aggregating all high and medium priority tasks related to the Hackathon and Open Source deadlines, ensuring all prerequisites for submission are addressed before the final due dates.",
+      "proposal_id": null,
+      "created_at": "2026-11-16T05:22:19.805Z"
+    },
+    {
+      "id": "run-mwitawgp-atoz8",
+      "command": "Create a checklist for submission",
+      "status": "planned",
+      "raw_input": "Create a checklist for submission",
+      "output_summary": "Submission Readiness Checklist",
+      "proposal_id": null,
+      "created_at": "2026-11-16T05:17:33.529Z"
+    },
+    {
+      "id": "run-mwit5rst-d08af",
+      "command": "Create a checklist for submission",
+      "status": "planned",
+      "raw_input": "Create a checklist for submission",
+      "output_summary": "Submission Readiness Checklist",
+      "proposal_id": null,
+      "created_at": "2026-11-16T05:13:34.205Z"
+    },
+    {
+      "id": "run-mwit501o-w3df5",
+      "command": "Create a checklist for submission",
+      "status": "planned",
+      "raw_input": "Create a checklist for submission",
+      "output_summary": "Submission Readiness Checklist",
+      "proposal_id": null,
+      "created_at": "2026-11-16T05:12:58.236Z"
+    },
+    {
+      "id": "run-mwiszsa0-804qp",
+      "command": "Create a checklist for submission",
+      "status": "planned",
+      "raw_input": "Create a checklist for submission",
+      "output_summary": "Submission Readiness Checklist",
+      "proposal_id": null,
+      "created_at": "2026-11-16T05:08:54.888Z"
+    },
+    {
+      "id": "run-mwisppgc-3qj9k",
+      "command": "Create a checklist for submission",
+      "status": "planned",
+      "raw_input": "Create a checklist for submission",
+      "output_summary": "Submission Readiness Checklist",
+      "proposal_id": null,
+      "created_at": "2026-11-16T05:01:04.668Z"
+    },
+    {
+      "id": "run-mwisoygr-g586z",
+      "command": "Create a checklist for submission",
+      "status": "planned",
+      "raw_input": "Create a checklist for submission",
+      "output_summary": "Submission Readiness Checklist",
+      "proposal_id": null,
+      "created_at": "2026-11-16T05:00:29.691Z"
+    },
+    {
+      "id": "run-mwirhhr9-6rqau",
+      "command": "Analyze this hackathon page and create a task plan",
+      "status": "planned",
+      "raw_input": "Analyze this hackathon page and create a task plan",
+      "output_summary": "Structured action plan for: \"Analyze this hackathon page and create a task plan\"",
+      "proposal_id": null,
+      "created_at": "2026-11-16T04:26:41.829Z"
+    },
+    {
+      "id": "run-mwira726-gybkn",
+      "command": "Create a checklist for submission",
+      "status": "planned",
+      "raw_input": "Create a checklist for submission",
+      "output_summary": "Submission Readiness Checklist",
+      "proposal_id": null,
+      "created_at": "2026-11-16T04:21:01.374Z"
+    },
+    {
+      "id": "run-mwhz92o9-q7jxg",
+      "command": "Create a checklist for submission",
+      "status": "planned",
+      "raw_input": "Create a checklist for submission",
+      "output_summary": "Submission Readiness Checklist",
+      "proposal_id": null,
+      "created_at": "2026-11-15T15:16:19.785Z"
+    },
+    {
+      "id": "run-mwhz8n0x-aonh2",
+      "command": "Analyze this hackathon page",
+      "status": "planned",
+      "raw_input": "Analyze this hackathon page",
+      "output_summary": "Structured action plan for: \"Analyze this hackathon page\"",
+      "proposal_id": null,
+      "created_at": "2026-11-15T15:15:59.505Z"
+    },
+    {
+      "id": "run-mwhz8hz2-0nyml",
+      "command": "Create a checklist for submission",
+      "status": "planned",
+      "raw_input": "Create a checklist for submission",
+      "output_summary": "Submission Readiness Checklist",
+      "proposal_id": null,
+      "created_at": "2026-11-15T15:15:52.958Z"
+    },
+    {
+      "id": "run-mwhz8a94-q6viu",
+      "command": "Create a checklist for submission",
+      "status": "planned",
+      "raw_input": "Create a checklist for submission",
+      "output_summary": "Submission Readiness Checklist",
+      "proposal_id": null,
+      "created_at": "2026-11-15T15:15:42.952Z"
+    },
+    {
+      "id": "run-mwhyqt55-iw0ob",
+      "command": "Create a checklist for submission",
+      "status": "planned",
+      "raw_input": "Create a checklist for submission",
+      "output_summary": "Submission Readiness Checklist",
+      "proposal_id": null,
+      "created_at": "2026-11-15T15:02:07.625Z"
+    },
+    {
+      "id": "run-mwhyoamc-qfxga",
+      "command": "Create a checklist for submission",
+      "status": "planned",
+      "raw_input": "Create a checklist for submission",
+      "output_summary": "Submission Readiness Checklist",
+      "proposal_id": null,
+      "created_at": "2026-11-15T15:00:10.308Z"
+    },
+    {
+      "id": "run-mwhyl35d-sfigp",
+      "command": "Create a checklist for submission",
+      "status": "planned",
+      "raw_input": "Create a checklist for submission",
+      "output_summary": "Submission Readiness Checklist",
+      "proposal_id": null,
+      "created_at": "2026-11-15T14:57:40.657Z"
+    },
+    {
       "id": "run-mwhwf053-g92ws",
       "command": "Create a checklist for submission",
       "status": "planned",
@@ -1117,6 +3663,456 @@
     }
   ],
   "activity_logs": [
+    {
+      "id": "act-mwitish8-knyia",
+      "type": "Approval",
+      "title": "Approved & Executed: Create a checklist for submission",
+      "detail": "14 actions completed, 0 failed",
+      "source": "Approvals",
+      "status": "Completed",
+      "timestamp": "2026-11-16T05:23:41.612Z",
+      "at": 1794806621612
+    },
+    {
+      "id": "act-mwitikny-9sam8",
+      "type": "Plan",
+      "title": "AI Plan drafted: Create a checklist for submission",
+      "detail": "14 proposed actions awaiting approval",
+      "source": "Agent Studio",
+      "status": "Pending",
+      "timestamp": "2026-11-16T05:23:31.486Z",
+      "at": 1794806611486
+    },
+    {
+      "id": "act-mwiti2a0-0dcml",
+      "type": "Approval",
+      "title": "Rejected plan: Create a checklist for submission",
+      "detail": "No tasks or actions were executed",
+      "source": "Approvals",
+      "status": "Rejected",
+      "timestamp": "2026-11-16T05:23:07.656Z",
+      "at": 1794806587656
+    },
+    {
+      "id": "act-mwiti1z5-28bzy",
+      "type": "Approval",
+      "title": "Rejected plan: Create a checklist for submission",
+      "detail": "No tasks or actions were executed",
+      "source": "Approvals",
+      "status": "Rejected",
+      "timestamp": "2026-11-16T05:23:07.265Z",
+      "at": 1794806587265
+    },
+    {
+      "id": "act-mwiti1qa-bfzkg",
+      "type": "Approval",
+      "title": "Rejected plan: Create a checklist for submission",
+      "detail": "No tasks or actions were executed",
+      "source": "Approvals",
+      "status": "Rejected",
+      "timestamp": "2026-11-16T05:23:06.946Z",
+      "at": 1794806586946
+    },
+    {
+      "id": "act-mwiti1hh-zihhh",
+      "type": "Approval",
+      "title": "Rejected plan: Create a checklist for submission",
+      "detail": "No tasks or actions were executed",
+      "source": "Approvals",
+      "status": "Rejected",
+      "timestamp": "2026-11-16T05:23:06.629Z",
+      "at": 1794806586629
+    },
+    {
+      "id": "act-mwiti18o-lllsi",
+      "type": "Approval",
+      "title": "Rejected plan: Create a checklist for submission",
+      "detail": "No tasks or actions were executed",
+      "source": "Approvals",
+      "status": "Rejected",
+      "timestamp": "2026-11-16T05:23:06.312Z",
+      "at": 1794806586312
+    },
+    {
+      "id": "act-mwiti10b-44zrs",
+      "type": "Approval",
+      "title": "Rejected plan: Create a checklist for submission",
+      "detail": "No tasks or actions were executed",
+      "source": "Approvals",
+      "status": "Rejected",
+      "timestamp": "2026-11-16T05:23:06.011Z",
+      "at": 1794806586011
+    },
+    {
+      "id": "act-mwiti0jo-vrn62",
+      "type": "Approval",
+      "title": "Rejected plan: Create a checklist for submission",
+      "detail": "No tasks or actions were executed",
+      "source": "Approvals",
+      "status": "Rejected",
+      "timestamp": "2026-11-16T05:23:05.412Z",
+      "at": 1794806585412
+    },
+    {
+      "id": "act-mwithzxo-ywn33",
+      "type": "Approval",
+      "title": "Rejected plan: Create a checklist for submission",
+      "detail": "No tasks or actions were executed",
+      "source": "Approvals",
+      "status": "Rejected",
+      "timestamp": "2026-11-16T05:23:04.620Z",
+      "at": 1794806584620
+    },
+    {
+      "id": "act-mwithy7k-yrwp7",
+      "type": "Approval",
+      "title": "Approved & Executed: Create a checklist for submission",
+      "detail": "4 actions completed, 0 failed",
+      "source": "Approvals",
+      "status": "Completed",
+      "timestamp": "2026-11-16T05:23:02.384Z",
+      "at": 1794806582384
+    },
+    {
+      "id": "act-mwithw09-nolv4",
+      "type": "Approval",
+      "title": "Approved & Executed: Create a checklist for submission",
+      "detail": "4 actions completed, 0 failed",
+      "source": "Approvals",
+      "status": "Completed",
+      "timestamp": "2026-11-16T05:22:59.529Z",
+      "at": 1794806579529
+    },
+    {
+      "id": "act-mwithu8r-a0r0n",
+      "type": "Approval",
+      "title": "Approved & Executed: Create a checklist for submission",
+      "detail": "15 actions completed, 0 failed",
+      "source": "Approvals",
+      "status": "Completed",
+      "timestamp": "2026-11-16T05:22:57.243Z",
+      "at": 1794806577243
+    },
+    {
+      "id": "act-mwithtb0-aqzjn",
+      "type": "Approval",
+      "title": "Approved & Executed: Create a checklist for submission",
+      "detail": "15 actions completed, 0 failed",
+      "source": "Approvals",
+      "status": "Completed",
+      "timestamp": "2026-11-16T05:22:56.028Z",
+      "at": 1794806576028
+    },
+    {
+      "id": "act-mwithidi-py7tn",
+      "type": "Plan",
+      "title": "AI Plan drafted: Create a checklist for submission",
+      "detail": "15 proposed actions awaiting approval",
+      "source": "Agent Studio",
+      "status": "Pending",
+      "timestamp": "2026-11-16T05:22:41.862Z",
+      "at": 1794806561862
+    },
+    {
+      "id": "act-mwith1d5-6l2ki",
+      "type": "Plan",
+      "title": "AI Plan drafted: Create a checklist for submission",
+      "detail": "15 proposed actions awaiting approval",
+      "source": "Agent Studio",
+      "status": "Pending",
+      "timestamp": "2026-11-16T05:22:19.817Z",
+      "at": 1794806539817
+    },
+    {
+      "id": "act-mwitawh3-odizb",
+      "type": "Plan",
+      "title": "AI Plan drafted: Create a checklist for submission",
+      "detail": "4 proposed actions awaiting approval",
+      "source": "Agent Studio",
+      "status": "Pending",
+      "timestamp": "2026-11-16T05:17:33.543Z",
+      "at": 1794806253543
+    },
+    {
+      "id": "act-mwit5rt4-4ren8",
+      "type": "Plan",
+      "title": "AI Plan drafted: Create a checklist for submission",
+      "detail": "4 proposed actions awaiting approval",
+      "source": "Agent Studio",
+      "status": "Pending",
+      "timestamp": "2026-11-16T05:13:34.216Z",
+      "at": 1794806014216
+    },
+    {
+      "id": "act-mwit5029-392l3",
+      "type": "Plan",
+      "title": "AI Plan drafted: Create a checklist for submission",
+      "detail": "4 proposed actions awaiting approval",
+      "source": "Agent Studio",
+      "status": "Pending",
+      "timestamp": "2026-11-16T05:12:58.257Z",
+      "at": 1794805978257
+    },
+    {
+      "id": "act-mwiszsaf-8uf85",
+      "type": "Plan",
+      "title": "AI Plan drafted: Create a checklist for submission",
+      "detail": "4 proposed actions awaiting approval",
+      "source": "Agent Studio",
+      "status": "Pending",
+      "timestamp": "2026-11-16T05:08:54.903Z",
+      "at": 1794805734903
+    },
+    {
+      "id": "act-mwisppgl-3fdng",
+      "type": "Plan",
+      "title": "AI Plan drafted: Create a checklist for submission",
+      "detail": "4 proposed actions awaiting approval",
+      "source": "Agent Studio",
+      "status": "Pending",
+      "timestamp": "2026-11-16T05:01:04.678Z",
+      "at": 1794805264678
+    },
+    {
+      "id": "act-mwisoyh1-bil6s",
+      "type": "Plan",
+      "title": "AI Plan drafted: Create a checklist for submission",
+      "detail": "4 proposed actions awaiting approval",
+      "source": "Agent Studio",
+      "status": "Pending",
+      "timestamp": "2026-11-16T05:00:29.701Z",
+      "at": 1794805229701
+    },
+    {
+      "id": "act-mwisjy1w-s487r",
+      "type": "Approval",
+      "title": "Rejected plan: Irrelevant Tasks",
+      "detail": "No tasks or actions were executed",
+      "source": "Approvals",
+      "status": "Rejected",
+      "timestamp": "2026-11-16T04:56:35.876Z",
+      "at": 1794804995876
+    },
+    {
+      "id": "act-mwisjy1d-zvc6z",
+      "type": "Approval",
+      "title": "Approved & Executed: Analyze HackOWASP Hackathon",
+      "detail": "2 actions completed, 0 failed",
+      "source": "Approvals",
+      "status": "Completed",
+      "timestamp": "2026-11-16T04:56:35.857Z",
+      "at": 1794804995857
+    },
+    {
+      "id": "act-mwisjskw-3geeh",
+      "type": "Approval",
+      "title": "Rejected plan: Unwanted Proposal",
+      "detail": "No tasks or actions were executed",
+      "source": "Approvals",
+      "status": "Rejected",
+      "timestamp": "2026-11-16T04:56:28.784Z",
+      "at": 1794804988784
+    },
+    {
+      "id": "act-mwisjskd-3w26h",
+      "type": "Approval",
+      "title": "Approved & Executed: Hackathon Deployment Plan",
+      "detail": "2 actions completed, 0 failed",
+      "source": "Approvals",
+      "status": "Completed",
+      "timestamp": "2026-11-16T04:56:28.765Z",
+      "at": 1794804988765
+    },
+    {
+      "id": "act-mwirxz1p-liq9o",
+      "type": "Approval",
+      "title": "Rejected plan: Reschedule overdue tasks",
+      "detail": "No tasks or actions were executed",
+      "source": "Approvals",
+      "status": "Rejected",
+      "timestamp": "2026-11-16T04:39:30.733Z",
+      "at": 1794803970733
+    },
+    {
+      "id": "act-mwirxx2d-zrupg",
+      "type": "Approval",
+      "title": "Rejected plan: Create a checklist for submission",
+      "detail": "No tasks or actions were executed",
+      "source": "Approvals",
+      "status": "Rejected",
+      "timestamp": "2026-11-16T04:39:28.165Z",
+      "at": 1794803968165
+    },
+    {
+      "id": "act-mwirxw6u-h61kr",
+      "type": "Approval",
+      "title": "Rejected plan: Create a checklist for submission",
+      "detail": "No tasks or actions were executed",
+      "source": "Approvals",
+      "status": "Rejected",
+      "timestamp": "2026-11-16T04:39:27.030Z",
+      "at": 1794803967030
+    },
+    {
+      "id": "act-mwirxv8e-dkh55",
+      "type": "Approval",
+      "title": "Rejected plan: Create a checklist for submission",
+      "detail": "No tasks or actions were executed",
+      "source": "Approvals",
+      "status": "Rejected",
+      "timestamp": "2026-11-16T04:39:25.790Z",
+      "at": 1794803965790
+    },
+    {
+      "id": "act-mwirxubm-uglb0",
+      "type": "Approval",
+      "title": "Rejected plan: Create a checklist for submission",
+      "detail": "No tasks or actions were executed",
+      "source": "Approvals",
+      "status": "Rejected",
+      "timestamp": "2026-11-16T04:39:24.610Z",
+      "at": 1794803964610
+    },
+    {
+      "id": "act-mwirxtep-18mve",
+      "type": "Approval",
+      "title": "Rejected plan: Create a checklist for submission",
+      "detail": "No tasks or actions were executed",
+      "source": "Approvals",
+      "status": "Rejected",
+      "timestamp": "2026-11-16T04:39:23.425Z",
+      "at": 1794803963425
+    },
+    {
+      "id": "act-mwirxsmz-nyabs",
+      "type": "Approval",
+      "title": "Approved & Executed: Create a checklist for submission",
+      "detail": "4 actions completed, 0 failed",
+      "source": "Approvals",
+      "status": "Completed",
+      "timestamp": "2026-11-16T04:39:22.427Z",
+      "at": 1794803962427
+    },
+    {
+      "id": "act-mwirxs5t-6ga85",
+      "type": "Approval",
+      "title": "Approved & Executed: Analyze this hackathon page",
+      "detail": "4 actions completed, 0 failed",
+      "source": "Approvals",
+      "status": "Completed",
+      "timestamp": "2026-11-16T04:39:21.809Z",
+      "at": 1794803961809
+    },
+    {
+      "id": "act-mwirxrkb-or65y",
+      "type": "Approval",
+      "title": "Approved & Executed: Create a checklist for submission",
+      "detail": "4 actions completed, 0 failed",
+      "source": "Approvals",
+      "status": "Completed",
+      "timestamp": "2026-11-16T04:39:21.035Z",
+      "at": 1794803961035
+    },
+    {
+      "id": "act-mwirxqxg-d3cw8",
+      "type": "Approval",
+      "title": "Approved & Executed: Create a checklist for submission",
+      "detail": "4 actions completed, 0 failed",
+      "source": "Approvals",
+      "status": "Completed",
+      "timestamp": "2026-11-16T04:39:20.212Z",
+      "at": 1794803960212
+    },
+    {
+      "id": "act-mwirxq6j-avzup",
+      "type": "Approval",
+      "title": "Approved & Executed: Analyze this hackathon page and create a task plan",
+      "detail": "4 actions completed, 0 failed",
+      "source": "Approvals",
+      "status": "Completed",
+      "timestamp": "2026-11-16T04:39:19.243Z",
+      "at": 1794803959243
+    },
+    {
+      "id": "act-mwirhhrx-f95zv",
+      "type": "Plan",
+      "title": "AI Plan drafted: Analyze this hackathon page and create a task plan",
+      "detail": "4 proposed actions awaiting approval",
+      "source": "Agent Studio",
+      "status": "Pending",
+      "timestamp": "2026-11-16T04:26:41.853Z",
+      "at": 1794803201853
+    },
+    {
+      "id": "act-mwira72r-a30g2",
+      "type": "Plan",
+      "title": "AI Plan drafted: Create a checklist for submission",
+      "detail": "4 proposed actions awaiting approval",
+      "source": "Agent Studio",
+      "status": "Pending",
+      "timestamp": "2026-11-16T04:21:01.395Z",
+      "at": 1794802861395
+    },
+    {
+      "id": "act-mwhz92p1-o6ol0",
+      "type": "Plan",
+      "title": "AI Plan drafted: Create a checklist for submission",
+      "detail": "4 proposed actions awaiting approval",
+      "source": "Agent Studio",
+      "status": "Pending",
+      "timestamp": "2026-11-15T15:16:19.813Z",
+      "at": 1794755779813
+    },
+    {
+      "id": "act-mwhz8n1j-fgxqe",
+      "type": "Plan",
+      "title": "AI Plan drafted: Analyze this hackathon page",
+      "detail": "4 proposed actions awaiting approval",
+      "source": "Agent Studio",
+      "status": "Pending",
+      "timestamp": "2026-11-15T15:15:59.527Z",
+      "at": 1794755759527
+    },
+    {
+      "id": "act-mwhz8hzx-1wei6",
+      "type": "Plan",
+      "title": "AI Plan drafted: Create a checklist for submission",
+      "detail": "4 proposed actions awaiting approval",
+      "source": "Agent Studio",
+      "status": "Pending",
+      "timestamp": "2026-11-15T15:15:52.989Z",
+      "at": 1794755752989
+    },
+    {
+      "id": "act-mwhyqt61-mamt6",
+      "type": "Plan",
+      "title": "AI Plan drafted: Create a checklist for submission",
+      "detail": "4 proposed actions awaiting approval",
+      "source": "Agent Studio",
+      "status": "Pending",
+      "timestamp": "2026-11-15T15:02:07.658Z",
+      "at": 1794754927658
+    },
+    {
+      "id": "act-mwhyoan9-hlo7p",
+      "type": "Plan",
+      "title": "AI Plan drafted: Create a checklist for submission",
+      "detail": "4 proposed actions awaiting approval",
+      "source": "Agent Studio",
+      "status": "Pending",
+      "timestamp": "2026-11-15T15:00:10.341Z",
+      "at": 1794754810341
+    },
+    {
+      "id": "act-mwhyl362-zkoaq",
+      "type": "Plan",
+      "title": "AI Plan drafted: Create a checklist for submission",
+      "detail": "4 proposed actions awaiting approval",
+      "source": "Agent Studio",
+      "status": "Pending",
+      "timestamp": "2026-11-15T14:57:40.682Z",
+      "at": 1794754660682
+    },
     {
       "id": "act-mwhwf05m-eiwk4",
       "type": "Plan",

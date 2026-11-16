@@ -1,12 +1,28 @@
 import dns from 'dns/promises';
-import { GoogleGenerativeAI } from '@google/generative-ai';
 
-const apiKey = process.env.GEMINI_API_KEY;
-const modelName = process.env.GEMINI_MODEL || 'gemini-1.5-flash';
+/**
+ * Normalizes the NVIDIA model identifier.
+ * If user omits the namespace prefix (e.g. "nemotron-3.5-bolt-e4b"),
+ * automatically prefixes "nvidia/" to avoid HTTP 404 from NVIDIA API.
+ */
+export function getNormalizedModel() {
+  const raw = (process.env.NVIDIA_MODEL || 'nvidia/nemotron-3.5-bolt-e4b').trim();
+  if (raw.startsWith('nemotron-') && !raw.includes('/')) {
+    return `nvidia/${raw}`;
+  }
+  return raw;
+}
 
-let genAI = null;
-if (apiKey && apiKey !== 'your_gemini_api_key_here') {
-  genAI = new GoogleGenerativeAI(apiKey);
+const getApiKey = () => (process.env.NVIDIA_API_KEY || '').trim();
+const nvidiaBaseUrl = (process.env.NVIDIA_BASE_URL || 'https://integrate.api.nvidia.com/v1').replace(/\/+$/, '');
+const completionsUrl = `${nvidiaBaseUrl}/chat/completions`;
+
+export const isNvidiaConfigured = Boolean(getApiKey() && getApiKey() !== 'your_nvidia_api_key_here');
+
+if (!isNvidiaConfigured) {
+  console.warn('[NVIDIA AI] NVIDIA_API_KEY is not set. AI planning will use deterministic fallback.');
+} else {
+  console.log(`[NVIDIA AI] Configured with model: ${getNormalizedModel()} (${completionsUrl})`);
 }
 
 /**
@@ -106,12 +122,51 @@ export async function safeFetchUrl(rawUrl) {
 }
 
 /**
- * Validates and normalizes proposed tasks from Gemini AI.
+ * Robustly extracts a JSON string from AI model output,
+ * stripping markdown code fences or conversational text if present.
+ */
+function extractJsonString(raw) {
+  if (typeof raw !== 'string') return raw;
+  const str = raw.trim();
+
+  // 1. Try markdown code block: ```json ... ``` or ``` ... ```
+  const codeBlockMatch = str.match(/```(?:json)?\s*([\s\S]*?)\s*```/i);
+  if (codeBlockMatch && codeBlockMatch[1]) {
+    const candidate = codeBlockMatch[1].trim();
+    try {
+      JSON.parse(candidate);
+      return candidate;
+    } catch {}
+  }
+
+  // 2. Try direct JSON parse
+  try {
+    JSON.parse(str);
+    return str;
+  } catch {}
+
+  // 3. Try finding the outermost { ... }
+  const firstBrace = str.indexOf('{');
+  const lastBrace = str.lastIndexOf('}');
+  if (firstBrace !== -1 && lastBrace > firstBrace) {
+    const candidate = str.substring(firstBrace, lastBrace + 1).trim();
+    try {
+      JSON.parse(candidate);
+      return candidate;
+    } catch {}
+  }
+
+  return str;
+}
+
+/**
+ * Validates and normalizes proposed tasks from NVIDIA AI.
  */
 function validateAndNormalizePlan(rawJson, existingTasks = []) {
   let parsed;
   try {
-    parsed = typeof rawJson === 'string' ? JSON.parse(rawJson) : rawJson;
+    const cleaned = typeof rawJson === 'string' ? extractJsonString(rawJson) : rawJson;
+    parsed = typeof cleaned === 'string' ? JSON.parse(cleaned) : cleaned;
   } catch (err) {
     throw new Error(`Invalid JSON returned by AI model: ${err.message}`);
   }
@@ -248,44 +303,104 @@ ${existingTasksContext || 'None'}
 
 Please generate the structured action plan in JSON now:`;
 
-  if (genAI) {
+  const apiKey = getApiKey();
+  const activeModel = getNormalizedModel();
+
+  if (apiKey && apiKey !== 'your_nvidia_api_key_here') {
     try {
-      const model = genAI.getGenerativeModel({
-        model: modelName,
-        generationConfig: {
-          temperature: 0.2,
-          responseMimeType: 'application/json'
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 25000);
+
+      let response;
+      try {
+        response = await fetch(completionsUrl, {
+          method: 'POST',
+          signal: controller.signal,
+          headers: {
+            'Authorization': `Bearer ${apiKey}`,
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify({
+            model: activeModel,
+            messages: [
+              { role: 'system', content: systemInstruction },
+              { role: 'user', content: userPrompt }
+            ],
+            temperature: 0.2,
+            max_tokens: 2048,
+            top_p: 1,
+            stream: false
+          })
+        });
+      } finally {
+        clearTimeout(timeoutId);
+      }
+
+      if (!response.ok) {
+        const status = response.status;
+        const errorText = await response.text().catch(() => '');
+        let errorMsg = errorText;
+        try {
+          const parsed = JSON.parse(errorText);
+          errorMsg = parsed?.error?.message || parsed?.detail || parsed?.message || errorText;
+        } catch {}
+
+        const category = (() => {
+          if (status === 400) return 'BAD_REQUEST (invalid request parameters or prompt)';
+          if (status === 401 || status === 403) return 'AUTH_ERROR (invalid or expired NVIDIA_API_KEY)';
+          if (status === 404) return 'NOT_FOUND (model ID not recognized on NVIDIA endpoint)';
+          if (status === 410) return 'MODEL_RETIRED (selected model reached end of life)';
+          if (status === 429) return 'QUOTA_EXCEEDED (rate limit or credits exhausted)';
+          if (status >= 500) return 'SERVER_ERROR (NVIDIA service issue)';
+          return 'UNKNOWN';
+        })();
+
+        console.error(`[NVIDIA AI] API call failed — HTTP ${status} (Model: ${activeModel}) · ${category} · ${errorMsg}`);
+        if (!allowFallback) {
+          throw new Error(`NVIDIA AI API error (${category}): ${errorMsg}`);
         }
-      });
+      } else {
+        const data = await response.json();
+        const content = data?.choices?.[0]?.message?.content || data?.choices?.[0]?.message?.reasoning_content;
+        if (!content) {
+          throw new Error('NVIDIA API returned an empty completion response');
+        }
 
-      const response = await model.generateContent({
-        contents: [
-          { role: 'user', parts: [{ text: `${systemInstruction}\n\n${userPrompt}` }] }
-        ]
-      });
-
-      const text = response.response.text();
-      const plan = validateAndNormalizePlan(text, existingTasks);
-      return {
-        ...plan,
-        isSimulated: false,
-        model: modelName
-      };
+        const plan = validateAndNormalizePlan(content, existingTasks);
+        return {
+          ...plan,
+          isSimulated: false,
+          model: data.model || activeModel
+        };
+      }
     } catch (err) {
-      console.error('[GEMINI] API call failed:', err.message);
+      if (err.name === 'AbortError') {
+        console.error(`[NVIDIA AI] API call timed out after 25s (Model: ${activeModel})`);
+      } else if (!err.message?.startsWith('NVIDIA AI API error')) {
+        console.error(`[NVIDIA AI] Request error: ${err.message}`);
+      }
       if (!allowFallback) {
-        throw new Error(`Gemini API error: ${err.message}`);
+        throw err;
       }
     }
   }
 
-  // Fallback engine if GEMINI_API_KEY is not configured or fails
-  console.log('[GEMINI] Using deterministic fallback planning generator (API key not configured or unreachable).');
+  // Fallback engine if NVIDIA_API_KEY is not configured or the live call failed.
+  const keyMissing = !Boolean(apiKey && apiKey !== 'your_nvidia_api_key_here');
+  if (keyMissing) {
+    console.log('[NVIDIA AI] Using deterministic fallback — NVIDIA_API_KEY is not configured in server environment.');
+  } else {
+    console.log('[NVIDIA AI] Using deterministic fallback — live NVIDIA AI call failed (see logs above).');
+  }
   const fallback = generateDeterministicFallback(command, existingTasks);
   return {
     ...fallback,
-    isSimulated: !Boolean(genAI),
-    warning: !Boolean(genAI) ? 'GEMINI_API_KEY is not configured in server environment. Plan generated via deterministic agent rules.' : 'Gemini API temporarily unavailable; fallback plan generated.'
+    isSimulated: true,
+    model: 'Deterministic Rules',
+    warning: keyMissing
+      ? 'NVIDIA_API_KEY is not configured. Plan generated via deterministic rules.'
+      : 'NVIDIA AI temporarily unavailable; fallback plan generated.'
   };
 }
 
